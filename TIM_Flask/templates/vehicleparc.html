@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="author" content="PIXINVENT">
+    <title>Plan d'affaires financier - Tim </title>
+    <link rel="apple-touch-icon" href="../static/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+   <nav
+        class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon"
+                                data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav bookmark-icons">
+                    <li class="nav-item d-none d-lg-block"> Bonjour  &#128075; </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link nav-link-style">
+                        <i class="ficon" data-feather="moon">
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link"
+                        id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder"> </span>    <span
+                                class="user-status">Admin
+                            </span>
+                        </div>
+
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="{{url_for('admin.profile')}}">
+                            <i class="me-50" data-feather="user">
+                            </i>
+                            Profil
+                        </a>
+                        <a class="dropdown-item" href="{{url_for('auth.login')}}">
+                            <i class="me-50" data-feather="power">
+                            </i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="me-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/dealer-area.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <!-- BEGIN: Header-->
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/dealer-area.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <div id="databaseManagement">
+                    
+                
+                    <!-- Button to create a new database -->
+                    <button id="createDatabaseButton" class="menu-title text-truncate" style="padding: 9px; margin-left: 18px; margin-top: 20px; margin-bottom: 10px; cursor: pointer; border-color: transparent; border-radius: 5px; width: 85%;">
+                        <i class="me-50" data-feather="plus-circle" style="height: 20px; width: 20px;"></i>
+                        Ajouter une version
+                    </button>
+                    
+                    <!-- Modal for adding a new database -->
+                    <div id="addConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Ajouter une nouvelle version</h5>
+                        <label for="dbNameInput">Nom de la version:</label>
+                        <input type="text" id="dbNameInput">
+                        <button id="confirmAddButton" class="delete-button ml-2" style="margin-top: 4px; border-radius: 5px; border-color: transparent; background-color: #ebffed; color: #0aad0aff;">Valider</button>
+                    </div>
+
+                
+                    <!-- Divs to switch between existing databases -->
+                    <div id="databaseList" class="d-flex flex-column align-items-start">
+                        <!-- Databases will be added here dynamically -->
+                    </div>
+                
+                    <!-- Popup for confirmation before deleting a database -->
+                    <div id="deleteConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Confirmer la suppression.</h5>
+                        <p>Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain. </p>
+                        <button id="deleteConfirm" class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>
+
+                    </div>
+                </div>
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">Plan d'affaires financier</h2>
+                            <div class="breadcrumb-wrapper breadcrumb-scroll">
+                                <ol class="breadcrumb breadcrumb-dashes scroll-bread">
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('shorts.shorts')}}">Shorts </a>  
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('calculationshorts.calculationshorts')}}">Calculation Shorts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vehicleparc.vehicle')}}">Vehicle Parc</a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerarea.dealer')}}">7.1 Dealer area </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnovervehicle.turnovervehicle')}}">7.2.1 Turnover Vehicles </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnover.turnoverpart')}}">7.2.2 Turnover Parts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnoverservices.turnoverservices')}}">7.3 Turnover Service & Body </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('costofsale.costofsale')}}">7.3 Cost of sales </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('salaries.salaries')}}">7.4.1 Salaries & Wages </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('sellingoper.sellingoper')}}"> 7.4.2 Selling & Oper.expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('invdepr.invdepr')}}">7.4.3 Inv. & Depr. </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialrequirements.financialrequirements')}}">7.5.1 Financial Requirements </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialincome.financialincome')}}">7.5.2 Fin. Income & Expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vat.vat')}}">7.5.3 VAT </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activitycontribution.activitycontribution')}}">7.6.1 Activity Contribution </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activityanalysis.activityanalysis')}}">7.6.2 Activity analysis </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('pl.pl')}}">7.7 P&L </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerbenchmark.dealerbenchmark')}}">7.8 Dealer Benchmark </a>                                              
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceassets.balanceassets')}}">7.9.1 Balance Assets </a>                                                                            
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceliabilities.balanceliabilities')}}">7.9.2 Balance Liabilities </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('ratiobalance.ratiobalance')}}">7.10 Ratio's Balance </a>                                        
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('cashflowanalysis.cashflowanalysis')}}">7.11 Cash Flow Analysis </a>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                <!-- Responsive tables start -->
+                    <div class="row" id="table-responsive">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Parc de véhicules</h4>
+                                </div>
+                                 <form id="vehicleform" class="validate-form mt-2 pt-50" method="post">                           
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="9"> 1. Nouveau pays de taille du marché des camions</td>
+                                            </tr>                                        
+                                            <tr>
+                                                <th scope="col" class="text-nowrap">GVW</th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header1" value="{{ data['VehicleParc_Header1'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header2" value="{{ data['VehicleParc_Header2'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header3" value="{{ data['VehicleParc_Header3'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header4" value="{{ data['VehicleParc_Header4'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header5" value="{{ data['VehicleParc_Header5'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header6" value="{{ data['VehicleParc_Header6'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header7" value="{{ data['VehicleParc_Header7'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header8" value="{{ data['VehicleParc_Header8'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>                                       
+                                            <tr>
+                                                <th class="text-nowrap header-data" colspan="1">&nbsp;</th>
+                                                <th class="text-nowrap header-data" colspan="3"> History</th>
+                                                <th class="text-nowrap header-data" colspan="5"> Prévision de la taille du marché pays</th>
+                                            </tr>
+                                            <tr>
+                                                <td>6 - 15 ton</td>
+                                                <td><input type="number" step='any' step=0.01 id="row-1-age" name="VehicleParc_Input1" value="{{ data['VehicleParc_Input1'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input2" value="{{ data['VehicleParc_Input2'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input3" value="{{ data['VehicleParc_Input3'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input4" value="{{ data['VehicleParc_Input4'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input5" value="{{ data['VehicleParc_Input5'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input6" value="{{ data['VehicleParc_Input6'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input7" value="{{ data['VehicleParc_Input7'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input8" value="{{ data['VehicleParc_Input8'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td> > 15 ton</td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input9" value="{{ data['VehicleParc_Input9'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input10" value="{{ data['VehicleParc_Input10'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input11" value="{{ data['VehicleParc_Input11'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input12" value="{{ data['VehicleParc_Input12'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input13" value="{{ data['VehicleParc_Input13'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input14" value="{{ data['VehicleParc_Input14'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input15" value="{{ data['VehicleParc_Input15'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input16" value="{{ data['VehicleParc_Input16'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tota"> Total</td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input17" value="{{ data['VehicleParc_Input17'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input18" value="{{ data['VehicleParc_Input18'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input19" value="{{ data['VehicleParc_Input19'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input20" value="{{ data['VehicleParc_Input20'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input21" value="{{ data['VehicleParc_Input21'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input22" value="{{ data['VehicleParc_Input22'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input23" value="{{ data['VehicleParc_Input23'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input24" value="{{ data['VehicleParc_Input24'] }}" disabled></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="9"> 2. Camion neuf - Zone de distribution de taille de marché</td>
+                                            </tr>                                        
+                                            <tr>
+                                                <th scope="col" class="text-nowrap">GVW</th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header9" value="{{ data['VehicleParc_Header9'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header10" value="{{ data['VehicleParc_Header10'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header11" value="{{ data['VehicleParc_Header11'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header12" value="{{ data['VehicleParc_Header12'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header13" value="{{ data['VehicleParc_Header13'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header14" value="{{ data['VehicleParc_Header14'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header15" value="{{ data['VehicleParc_Header15'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header16" value="{{ data['VehicleParc_Header16'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-nowrap header-data" colspan="1">&nbsp;</th>
+                                                <th class="text-nowrap header-data" colspan="3"> History</th>
+                                                <th class="text-nowrap header-data" colspan="5"> Prévision de la taille du marché pays</th>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>6 - 15 ton</td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input25" value="{{ data['VehicleParc_Input25'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input26" value="{{ data['VehicleParc_Input26'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input27" value="{{ data['VehicleParc_Input27'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input28" value="{{ data['VehicleParc_Input28'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input29" value="{{ data['VehicleParc_Input29'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input30" value="{{ data['VehicleParc_Input30'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input31" value="{{ data['VehicleParc_Input31'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input32" value="{{ data['VehicleParc_Input32'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td> > 15 ton</td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input33" value="{{ data['VehicleParc_Input33'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input34" value="{{ data['VehicleParc_Input34'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input35" value="{{ data['VehicleParc_Input35'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input36" value="{{ data['VehicleParc_Input36'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input37" value="{{ data['VehicleParc_Input37'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input38" value="{{ data['VehicleParc_Input38'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input39" value="{{ data['VehicleParc_Input39'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input40" value="{{ data['VehicleParc_Input40'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tota"> Total</td>
+            
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input41" value="{{ data['VehicleParc_Input41'] }}" disabled=""></td>
+                                                <td><input type="number" step='any' id="row-1-age"name="VehicleParc_Input42" value="{{ data['VehicleParc_Input42'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input43" value="{{ data['VehicleParc_Input43'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input44" value="{{ data['VehicleParc_Input44'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input45" value="{{ data['VehicleParc_Input45'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input46" value="{{ data['VehicleParc_Input46'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input47" value="{{ data['VehicleParc_Input47'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input48" value="{{ data['VehicleParc_Input48'] }}" disabled></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="17" disabled> 3. Running parc DAF - espace concessionnaire</td>
+                                            </tr>                                        
+                                            <tr>
+                                                <th scope="col" class="text-nowrap">DAF Type</th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header100" value="{{ data['VehicleParc_Header100'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header101" value="{{ data['VehicleParc_Header101'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header102" value="{{ data['VehicleParc_Header102'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header103" value="{{ data['VehicleParc_Header103'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header104" value="{{ data['VehicleParc_Header104'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>                                     
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header105" value="{{ data['VehicleParc_Header105'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header106" value="{{ data['VehicleParc_Header106'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header107" value="{{ data['VehicleParc_Header107'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header108" value="{{ data['VehicleParc_Header108'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header109" value="{{ data['VehicleParc_Header109'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>    
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header110" value="{{ data['VehicleParc_Header110'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header111" value="{{ data['VehicleParc_Header111'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header112" value="{{ data['VehicleParc_Header112'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>    
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header113" value="{{ data['VehicleParc_Header113'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header114" value="{{ data['VehicleParc_Header114'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap">Total</th>                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>45</td>
+                                        
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input49" value="{{ data['VehicleParc_Input49'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input50" value="{{ data['VehicleParc_Input50'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input51" value="{{ data['VehicleParc_Input51'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input52" value="{{ data['VehicleParc_Input52'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input53" value="{{ data['VehicleParc_Input53'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input54" value="{{ data['VehicleParc_Input54'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input55" value="{{ data['VehicleParc_Input55'] }}" id ='input' required></td>
+                            
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input56" value="{{ data['VehicleParc_Input56'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input57" value="{{ data['VehicleParc_Input57'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input58" value="{{ data['VehicleParc_Input58'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input59" value="{{ data['VehicleParc_Input59'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input60" value="{{ data['VehicleParc_Input60'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input61" value="{{ data['VehicleParc_Input61'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input62" value="{{ data['VehicleParc_Input62'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input63" value="{{ data['VehicleParc_Input63'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input64" value="{{ data['VehicleParc_Input64'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>55</td>
+                                                
+                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input65" value="{{ data['VehicleParc_Input65'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input66" value="{{ data['VehicleParc_Input66'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input67" value="{{ data['VehicleParc_Input67'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input68" value="{{ data['VehicleParc_Input68'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input69" value="{{ data['VehicleParc_Input69'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input70" value="{{ data['VehicleParc_Input70'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input71" value="{{ data['VehicleParc_Input71'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input72" value="{{ data['VehicleParc_Input72'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input73" value="{{ data['VehicleParc_Input73'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input74" value="{{ data['VehicleParc_Input74'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input75" value="{{ data['VehicleParc_Input75'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input76" value="{{ data['VehicleParc_Input76'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input77" value="{{ data['VehicleParc_Input77'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input78" value="{{ data['VehicleParc_Input78'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input79" value="{{ data['VehicleParc_Input79'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input80" value="{{ data['VehicleParc_Input80'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>65</td>
+                                
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input81" value="{{ data['VehicleParc_Input81'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input82" value="{{ data['VehicleParc_Input82'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input83" value="{{ data['VehicleParc_Input83'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input84" value="{{ data['VehicleParc_Input84'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input85" value="{{ data['VehicleParc_Input85'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input86" value="{{ data['VehicleParc_Input86'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input87" value="{{ data['VehicleParc_Input87'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input88" value="{{ data['VehicleParc_Input88'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input89" value="{{ data['VehicleParc_Input89'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input90" value="{{ data['VehicleParc_Input90'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input91" value="{{ data['VehicleParc_Input91'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input92" value="{{ data['VehicleParc_Input92'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input93" value="{{ data['VehicleParc_Input93'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input94" value="{{ data['VehicleParc_Input94'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input95" value="{{ data['VehicleParc_Input95'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input96" value="{{ data['VehicleParc_Input96'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>75</td>
+                                                
+                                            
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input97" value="{{ data['VehicleParc_Input97'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input98" value="{{ data['VehicleParc_Input98'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input99" value="{{ data['VehicleParc_Input99'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input100" value="{{ data['VehicleParc_Input100'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input101" value="{{ data['VehicleParc_Input101'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input102" value="{{ data['VehicleParc_Input102'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input103" value="{{ data['VehicleParc_Input103'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input104" value="{{ data['VehicleParc_Input104'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input105" value="{{ data['VehicleParc_Input105'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input106" value="{{ data['VehicleParc_Input106'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input107" value="{{ data['VehicleParc_Input107'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input108" value="{{ data['VehicleParc_Input108'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input109" value="{{ data['VehicleParc_Input109'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input110" value="{{ data['VehicleParc_Input110'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input111" value="{{ data['VehicleParc_Input111'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input112" value="{{ data['VehicleParc_Input112'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>85</td>
+                                
+                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input113" value="{{ data['VehicleParc_Input113'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input114" value="{{ data['VehicleParc_Input114'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input115" value="{{ data['VehicleParc_Input115'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input116" value="{{ data['VehicleParc_Input116'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input117" value="{{ data['VehicleParc_Input117'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input118" value="{{ data['VehicleParc_Input118'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input119" value="{{ data['VehicleParc_Input119'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input120" value="{{ data['VehicleParc_Input120'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input121" value="{{ data['VehicleParc_Input121'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input122" value="{{ data['VehicleParc_Input122'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input123" value="{{ data['VehicleParc_Input123'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input124" value="{{ data['VehicleParc_Input124'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input125" value="{{ data['VehicleParc_Input125'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input126" value="{{ data['VehicleParc_Input126'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input127" value="{{ data['VehicleParc_Input127'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input128" value="{{ data['VehicleParc_Input128'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>95</td>
+                                                
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input129" value="{{ data['VehicleParc_Input129'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input130" value="{{ data['VehicleParc_Input130'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input131" value="{{ data['VehicleParc_Input131'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input132" value="{{ data['VehicleParc_Input132'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input133" value="{{ data['VehicleParc_Input133'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input134" value="{{ data['VehicleParc_Input134'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input135" value="{{ data['VehicleParc_Input135'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input136" value="{{ data['VehicleParc_Input136'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input137" value="{{ data['VehicleParc_Input137'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input138" value="{{ data['VehicleParc_Input138'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input139" value="{{ data['VehicleParc_Input139'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input140" value="{{ data['VehicleParc_Input140'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input141" value="{{ data['VehicleParc_Input141'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input142" value="{{ data['VehicleParc_Input142'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input143" value="{{ data['VehicleParc_Input143'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input144" value="{{ data['VehicleParc_Input144'] }}" disabled></td>
+                                            </tr>
+                                            <tr>
+                                                <td>105</td>
+                                    
+                                
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input145" value="{{ data['VehicleParc_Input145'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input146" value="{{ data['VehicleParc_Input146'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input147" value="{{ data['VehicleParc_Input147'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input148" value="{{ data['VehicleParc_Input148'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input149" value="{{ data['VehicleParc_Input149'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input150" value="{{ data['VehicleParc_Input150'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input151" value="{{ data['VehicleParc_Input151'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input152" value="{{ data['VehicleParc_Input152'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input153" value="{{ data['VehicleParc_Input153'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input154" value="{{ data['VehicleParc_Input154'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input155" value="{{ data['VehicleParc_Input155'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input156" value="{{ data['VehicleParc_Input156'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input157" value="{{ data['VehicleParc_Input157'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input158" value="{{ data['VehicleParc_Input158'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input159" value="{{ data['VehicleParc_Input159'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input160" value="{{ data['VehicleParc_Input160'] }}" disabled></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Total</td>
+                                                
+                                    
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input161" value="{{ data['VehicleParc_Input161'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input162" value="{{ data['VehicleParc_Input162'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input163" value="{{ data['VehicleParc_Input163'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input164" value="{{ data['VehicleParc_Input164'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input165" value="{{ data['VehicleParc_Input165'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input166" value="{{ data['VehicleParc_Input166'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input167" value="{{ data['VehicleParc_Input167'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input168" value="{{ data['VehicleParc_Input168'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input169" value="{{ data['VehicleParc_Input169'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input170" value="{{ data['VehicleParc_Input170'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input171" value="{{ data['VehicleParc_Input171'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input172" value="{{ data['VehicleParc_Input172'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input173" value="{{ data['VehicleParc_Input173'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input174" value="{{ data['VehicleParc_Input174'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input175" value="{{ data['VehicleParc_Input175'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input176" value="{{ data['VehicleParc_Input176'] }}" disabled></td>
+                                            </tr>                                     
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="9"> 4. Revendeur de remorques</td>
+                                            </tr>                                        
+                                            <tr>
+                                                <th scope="col" class="text-nowrap">GVW</th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header17" value="{{ data['VehicleParc_Header17'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header18" value="{{ data['VehicleParc_Header18'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header19" value="{{ data['VehicleParc_Header19'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header20" value="{{ data['VehicleParc_Header20'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header21" value="{{ data['VehicleParc_Header21'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header22" value="{{ data['VehicleParc_Header22'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header23" value="{{ data['VehicleParc_Header23'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header24" value="{{ data['VehicleParc_Header24'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-nowrap header-data" colspan="1">&nbsp;</th>
+                                                <th class="text-nowrap header-data" colspan="3"> History</th>
+                                                <th class="text-nowrap header-data" colspan="5"> Prévision de la taille du marché pays</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Trail</td>
+                                            
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input177" value="{{ data['VehicleParc_Input177'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input178" value="{{ data['VehicleParc_Input179'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input179" value="{{ data['VehicleParc_Input179'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input180" value="{{ data['VehicleParc_Input180'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input181" value="{{ data['VehicleParc_Input181'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input182" value="{{ data['VehicleParc_Input182'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input183" value="{{ data['VehicleParc_Input183'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input184" value="{{ data['VehicleParc_Input184'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td> > 15 ton</td>
+                                               
+                                    
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input185" value="{{ data['VehicleParc_Input185'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input186" value="{{ data['VehicleParc_Input186'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input187" value="{{ data['VehicleParc_Input187'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input188" value="{{ data['VehicleParc_Input188'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input189" value="{{ data['VehicleParc_Input189'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input190" value="{{ data['VehicleParc_Input190'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input191" value="{{ data['VehicleParc_Input191'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input192" value="{{ data['VehicleParc_Input192'] }}" id ='input' required></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="tota"> Total</td>
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input193" value="{{ data['VehicleParc_Input193'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input194" value="{{ data['VehicleParc_Input194'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input195" value="{{ data['VehicleParc_Input195'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input196" value="{{ data['VehicleParc_Input196'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input197" value="{{ data['VehicleParc_Input197'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input198" value="{{ data['VehicleParc_Input198'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input199" value="{{ data['VehicleParc_Input199'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input200" value="{{ data['VehicleParc_Input200'] }}" disabled></td>
+                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>
+                                <div class="space"></div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="9"> 6. Used Truck sales dealer</td>
+                                            </tr>                                        
+                                            <tr>
+                                                <th scope="col" class="text-nowrap">GVW</th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header200" value="{{ data['VehicleParc_Header200'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header201" value="{{ data['VehicleParc_Header201'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header202" value="{{ data['VehicleParc_Header202'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header203" value="{{ data['VehicleParc_Header203'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VVehicleParc_Header204" value="{{ data['VVehicleParc_Header204'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header205" value="{{ data['VehicleParc_Header205'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header206" value="{{ data['VehicleParc_Header206'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                                <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="VehicleParc_Header207" value="{{ data['VehicleParc_Header207'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-nowrap header-data" colspan="1">&nbsp;</th>
+                                                <th class="text-nowrap header-data" colspan="3"> History</th>
+                                                <th class="text-nowrap header-data" colspan="5"> Prévision de la taille du marché pays</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Trail</td>
+                                            
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input208" value="{{ data['VehicleParc_Input208'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input209" value="{{ data['VehicleParc_Input209'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input210" value="{{ data['VehicleParc_Input210'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input211" value="{{ data['VehicleParc_Input211'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input212" value="{{ data['VehicleParc_Input212'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input213" value="{{ data['VehicleParc_Input213'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input214" value="{{ data['VehicleParc_Input214'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input215" value="{{ data['VehicleParc_Input215'] }}" id ='input' required></td>
+                                            </tr>
+                                            <tr>
+                                                <td> > 15 ton</td>
+                                               
+                                    
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input216" value="{{ data['VehicleParc_Input216'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input217" value="{{ data['VehicleParc_Input217'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input218" value="{{ data['VehicleParc_Input218'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input219" value="{{ data['VehicleParc_Input219'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input220" value="{{ data['VehicleParc_Input220'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input221" value="{{ data['VehicleParc_Input221'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input222" value="{{ data['VehicleParc_Input222'] }}" id ='input' required></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input223" value="{{ data['VehicleParc_Input223'] }}" id ='input' required></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td class="tota"> Total</td>
+                                                
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input224" value="{{ data['VehicleParc_Input224'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input225" value="{{ data['VehicleParc_Input225'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input226" value="{{ data['VehicleParc_Input226'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input227" value="{{ data['VehicleParc_Input227'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input228" value="{{ data['VehicleParc_Input228'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input229" value="{{ data['VehicleParc_Input229'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input230" value="{{ data['VehicleParc_Input230'] }}" disabled></td>
+                                                <td><input type="number" step='any' id="row-1-age" name="VehicleParc_Input231" value="{{ data['VehicleParc_Input231'] }}" disabled></td>
+                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>                                
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-nowrap header-data" colspan="3"> 5. Parc de véhicules Arrêt</td>
+                                            </tr>                                        
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Parc de véhicules Arrêt %</td>
+                                                <td><input class='last-input' id='input' type="number" step='any' id="row-3-age input" name="VehicleParc_Input205" value="{{ data['VehicleParc_Input205'] }}"required></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                 
+                                       </div>
+                                <div class="space"></div>
+                                    <div class="button-div  col-xl-4 col-md-6 col-sm-12 mb-2">
+
+                                    <button type="submit" id='update-btn' onclick="changeActionUpdate()" class="buttons btn btn-success" >Soumettre</button>
+                                    </div>                                   
+                            </div>
+                        </div>
+                                <div class="card">
+                                    <div class="card-header border-bottom">
+                                        <h4 class="card-title">Supprimer le rapport</h4>
+                                    </div>
+                                    <div class="card-body py-2 my-25">
+                                        <div class="alert alert-warning">
+                                            <h4 class="alert-heading">Voulez-vous vraiment supprimer ce rapport ?</h4>
+                                            <div class="alert-body fw-normal">
+                                                Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain.
+                                            </div>
+                                        </div>
+
+                                    <form id="formAccountDeactivation" class="validate-form" onsubmit="return false">
+                                        <div>
+                                            <button type="submit" onclick="changeActionDelete()" class="btn btn-danger deactivate-account mt-1">Supprimer le rapport</button>
+                                        </div>
+                                    </form>
+                                </form>                             
+                        </div>
+                    </div>
+
+                <!-- Responsive tables end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Tim</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../static/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../static/js/core/app-menu.js"></script>
+    <script src="../static/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        $(function(){
+  $("td").click(function(event){
+    if($(this).children("input").length > 0)
+          return false;
+
+    var tdObj = $(this);
+    var preText = tdObj.html();
+    var inputObj = $("<input type='text' />");
+    tdObj.html("");
+
+    inputObj.width(tdObj.width())
+            .height(tdObj.height())
+            .css({border:"0px",fontSize:"17px"})
+            .val(preText)
+            .appendTo(tdObj)
+            .trigger("focus")
+            .trigger("select");
+
+    inputObj.keyup(function(event){
+      if(13 == event.which) { // press ENTER-key
+        var text = $(this).val();
+        tdObj.html(text);
+      }
+      else if(27 == event.which) {  // press ESC-key
+        tdObj.html(preText);
+      }
+    });
+
+    inputObj.click(function(){
+      return false;
+    });
+  });
+});
+    </script>
+     <script>
+        function changeActionUpdate() {
+            document.getElementById("vehicleform").action = '{{url_for("vehicleparc.update_vehicle")}}';
+        }
+        document.addEventListener('keydown', function(event){
+            var code = event.keyCode || event.which;
+            if (code === 9) {  
+                changeActionUpdate();
+                /*alert("Hello Tab key")*/
+                document.getElementById("vehicleform").submit();
+            }
+        });
+    </script>
+     <script>
+        function changeActionDelete() {
+            var result = confirm("Once deleted data can't be recovered, Are you sure you want to delete?");
+            if (result) {
+                document.getElementById("vehicleform").action = '{{url_for("vehicleparc.delete_vehicle")}}';
+            }    
+        }
+
+
+        let inputElt = document.getElementById('input');
+        let btn = document.getElementById('sbmit-btn');
+        let update = document.getElementById('update-btn');
+
+        if (btn.disabled = true ){
+            update.disabled = false
+        } else (update.disabled = true)
+
+        inputElt.addEventListener("input", function(){
+        btn.disabled = (this.value === '');
+        });
+         
+
+        function formatNumberInputFields() {
+            const numberInputs = document.querySelectorAll('input[type="number"]');
+            numberInputs.forEach(input => {
+                const value = input.value;
+                if (value) {
+                const formattedValue = parseFloat(value).toLocaleString();
+                input.value = formattedValue;
+                }
+            });
+        }
+
+        // call the formatNumberInputFields function when the page loads
+        window.addEventListener('load', formatNumberInputFields);
+        window.addEventListener('load', console.log('hi'));
+
+
+        
+
+    </script>    
+    <!--DataBase Scripts-->
+
+    <script>
+        $(document).ready(function () {
+            // Function to handle database switching
+            function switchDatabase(databaseName) {
+                // Send a POST request to switch to the selected database
+                $.ajax({
+                    url: "{{ url_for('db.switch_db', db='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'POST',
+                    success: function (data) {
+                        // If the database is switched successfully, reload the page
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error switching the database, show an error message
+                        alert('Error switching database: ' + error);
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                // Function to toggle the modal
+                $("#createDatabaseButton").click(function () {
+                    $("#addConfirmation").toggle();
+                });
+
+                // Function to handle adding a new database
+                $("#confirmAddButton").click(function () {
+                    var dbName = $("#dbNameInput").val().trim(); // Get the entered database name
+                    if (dbName !== "") {
+                        // Call createDatabase function with the entered database name
+                        createDatabase(dbName);
+                        // Hide the modal
+                        $("#addConfirmation").hide();
+                    } else {
+                        alert("Please enter a valid database name.");
+                    }
+                });
+
+                // Function to create a new database
+                function createDatabase(dbName) {
+                    console.log("Creating database", dbName)
+                    // Send a POST request to create a new database
+                    $.ajax({
+                        url: "{{ url_for('db.create_db') }}",
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ db_name: dbName }),
+                        success: function (data) {
+                            // If the database is created successfully, notify the user
+                            alert(data.message); // Display the success message returned from the server
+                            // Refresh the list of databases
+                            getAndDisplayDatabases();
+                        },
+                        error: function (xhr, status, error) {
+                            // If there's an error creating the database, show an error message
+                            alert('Error creating database: ' + error);
+                        }
+                    });
+                }
+            });
+
+            // Function to toggle the visibility of a section
+            $("#createDatabase").click(function () {
+                $("#sectionToToggle").toggle();
+                createDatabase(); // Call createDatabase function when the button is clicked
+            });
+
+            // Function to display the delete confirmation modal
+            function showDeleteConfirmation(databaseName) {
+                // Decode the database name before displaying it
+                var decodedDatabaseName = decodeURIComponent(databaseName);
+                console.log('Database Name:', decodedDatabaseName);
+                // Set the text of the delete confirmation modal to include the database name
+                $('#deleteDatabaseName').text(decodedDatabaseName);
+                // Show the delete confirmation modal
+                $('#deleteConfirmation').show();
+            }
+
+            // Function to retrieve the list of databases and display them to the user
+            function getAndDisplayDatabases() {
+                // Send a GET request to your Flask backend to retrieve the list of databases
+                $.ajax({
+                    url: "{{ url_for('db.list_databases') }}",
+                    method: 'GET',
+                    success: function (data) {
+                        // If the list of databases is retrieved successfully, display it to the user
+                        var databaseList = $('#databaseList');
+                        databaseList.empty(); // Clear previous database entries
+
+                        // Append each database name to the databaseList div
+                        data.databases.forEach(function (database) {
+                            // Create a div for each database with flex styling
+                            var databaseElement = $('<div class="database d-flex align-items-center" style="padding: 4px; width: 85%; margin-left: 20px;"></div>');
+                            // Create a span for the database name
+                            var nameElement = $('<span class="flex-grow-1">' + database + '</span>');
+                            // Create a button for delete action
+                            var deleteButton = $('<button class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>');
+
+                            // Append the name and delete button to the database element
+                            databaseElement.append(nameElement);
+                            databaseElement.append(deleteButton);
+
+                            // Append the database element to the databaseList div
+                            databaseList.append(databaseElement);
+
+                            // Add click event for database name
+                            nameElement.click(function () {
+                                switchDatabase(database); // Switch database when clicked
+                            });
+
+                            // Add click event for delete button
+                            deleteButton.click(function () {
+                                // Encode the database name before passing it to the function
+                                var encodedDatabaseName = encodeURIComponent(database);
+                                deleteDatabase(encodedDatabaseName); // Trigger deletion process
+                            });
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error retrieving the list of databases, show an error message
+                        alert('Error retrieving databases: ' + error);
+                    }
+                });
+            }
+
+            // Function to delete the database
+            function deleteDatabase(databaseName) {
+                // Send a DELETE request to your Flask backend to delete the selected database
+                $.ajax({
+                    url: "{{ url_for('db.delete_db', db_name='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'DELETE',
+                    success: function (data) {
+                        // If the database is deleted successfully, notify the user
+                        alert(data.message); // Display the success message returned from the server
+                        // Refresh the list of databases
+                        getAndDisplayDatabases();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error deleting the database, show an error message
+                        alert('Error deleting database: ' + error);
+                    }
+                });
+            }
+
+            // Click event for delete confirmation modal's "No" button
+            $('#deleteCancel').click(function () {
+                // Close the delete confirmation modal without deleting the database
+                $('#deleteConfirmation').hide();
+            });
+
+            // Call the function to retrieve and display databases when the document is ready
+            getAndDisplayDatabases();
+
+        });
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

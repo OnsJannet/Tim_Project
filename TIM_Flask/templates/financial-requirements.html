@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="author" content="PIXINVENT">
+    <title>Plan d'affaires financier - Tim </title>
+    <link rel="apple-touch-icon" href="../static/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon"
+                                data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav bookmark-icons">
+                    <li class="nav-item d-none d-lg-block"> Bonjour &#128075; </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link nav-link-style">
+                        <i class="ficon" data-feather="moon">
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link"
+                        id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder"> </span>    <span
+                                class="user-status">Admin
+                            </span>
+                        </div>
+
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="{{url_for('admin.profile')}}">
+                            <i class="me-50" data-feather="user">
+                            </i>
+                            Profil
+                        </a>
+                        <a class="dropdown-item" href="{{url_for('auth.login')}}">
+                            <i class="me-50" data-feather="power">
+                            </i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/index.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/index.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <div id="databaseManagement">
+                    
+                
+                    <!-- Button to create a new database -->
+                    <button id="createDatabaseButton" class="menu-title text-truncate" style="padding: 9px; margin-left: 18px; margin-top: 20px; margin-bottom: 10px; cursor: pointer; border-color: transparent; border-radius: 5px; width: 85%;">
+                        <i class="me-50" data-feather="plus-circle" style="height: 20px; width: 20px;"></i>
+                        Ajouter une version
+                    </button>
+                    
+                    <!-- Modal for adding a new database -->
+                    <div id="addConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Ajouter une nouvelle version</h5>
+                        <label for="dbNameInput">Nom de la version:</label>
+                        <input type="text" id="dbNameInput">
+                        <button id="confirmAddButton" class="delete-button ml-2" style="margin-top: 4px; border-radius: 5px; border-color: transparent; background-color: #ebffed; color: #0aad0aff;">Valider</button>
+                    </div>
+
+                
+                    <!-- Divs to switch between existing databases -->
+                    <div id="databaseList" class="d-flex flex-column align-items-start">
+                        <!-- Databases will be added here dynamically -->
+                    </div>
+                
+                    <!-- Popup for confirmation before deleting a database -->
+                    <div id="deleteConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Confirmer la suppression.</h5>
+                        <p>Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain. </p>
+                        <button id="deleteConfirm" class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>
+
+                    </div>
+                </div>
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">Plan d'affaires financier</h2>
+                            <div class="breadcrumb-wrapper breadcrumb-scroll">
+                                <ol class="breadcrumb breadcrumb-dashes scroll-bread">
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('shorts.shorts')}}">Shorts </a>  
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('calculationshorts.calculationshorts')}}">Calculation Shorts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vehicleparc.vehicle')}}">Vehicle Parc</a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerarea.dealer')}}">7.1 Dealer area </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnovervehicle.turnovervehicle')}}">7.2.1 Turnover Vehicles </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnover.turnoverpart')}}">7.2.2 Turnover Parts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnoverservices.turnoverservices')}}">7.3 Turnover Service & Body </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('costofsale.costofsale')}}">7.3 Cost of sales </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('salaries.salaries')}}">7.4.1 Salaries & Wages </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('sellingoper.sellingoper')}}"> 7.4.2 Selling & Oper.expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('invdepr.invdepr')}}">7.4.3 Inv. & Depr. </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialrequirements.financialrequirements')}}">7.5.1 Financial Requirements </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialincome.financialincome')}}">7.5.2 Fin. Income & Expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vat.vat')}}">7.5.3 VAT </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activitycontribution.activitycontribution')}}">7.6.1 Activity Contribution </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activityanalysis.activityanalysis')}}">7.6.2 Activity analysis </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('pl.pl')}}">7.7 P&L </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerbenchmark.dealerbenchmark')}}">7.8 Dealer Benchmark </a>                                              
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceassets.balanceassets')}}">7.9.1 Balance Assets </a>                                                                            
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceliabilities.balanceliabilities')}}">7.9.2 Balance Liabilities </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('ratiobalance.ratiobalance')}}">7.10 Ratio's Balance </a>                                        
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('cashflowanalysis.cashflowanalysis')}}">7.11 Cash Flow Analysis </a>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                <!-- Responsive tables start -->
+                <div class="row" id="table-responsive">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">7.5.1 Financial Requirements</h4>
+                            </div>
+                            <div class="space"></div>  
+                            <form id="vehicleform" class="validate-form mt-2 pt-50" method="post">                                                   
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Header1" value="{{ data['FinancialRequirement_Header1'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Header2" value="{{ data['FinancialRequirement_Header2'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Header3" value="{{ data['FinancialRequirement_Header3'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Header4" value="{{ data['FinancialRequirement_Header4'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Header5" value="{{ data['FinancialRequirement_Header5'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">1. Besoins à long terme (après amortissements)</td>
+                                        </tr>                        
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+
+                                            <td>solde d'ouverture</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td class="filling">solde d'ouverture</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td class="filling">solde d'ouverture</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td class="filling">solde d'ouverture</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td class="filling">solde d'ouverture</td>
+                            
+                                        </tr>
+                                        <tr>
+                                            <td>Immobilisations incorporelles</td>
+
+                                            <td><input id='input' type="number" step='any' id="row-1-age" name="FinancialRequirement_Input1" value="{{ data['FinancialRequirement_Input1'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input2" value="{{ data['FinancialRequirement_Input2'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input3" value="{{ data['FinancialRequirement_Input3'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input4" value="{{ data['FinancialRequirement_Input4'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input5" value="{{ data['FinancialRequirement_Input5'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input6" value="{{ data['FinancialRequirement_Input6'] }}"  disabled></td>
+                                            
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Immobilisations corporelles</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input7" value="{{ data['FinancialRequirement_Input7'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input8" value="{{ data['FinancialRequirement_Input8'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input9" value="{{ data['FinancialRequirement_Input9'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input10" value="{{ data['FinancialRequirement_Input10'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input11" value="{{ data['FinancialRequirement_Input11'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input12" value="{{ data['FinancialRequirement_Input12'] }}"  disabled></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Immobilisations financières</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input13" value="{{ data['FinancialRequirement_Input13'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input14" value="{{ data['FinancialRequirement_Input14'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input15" value="{{ data['FinancialRequirement_Input15'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input16" value="{{ data['FinancialRequirement_Input16'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input17" value="{{ data['FinancialRequirement_Input17'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input18" value="{{ data['FinancialRequirement_Input18'] }}"  disabled></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Pièces de stock initiales</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input19" value="{{ data['FinancialRequirement_Input19'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input20" value="{{ data['FinancialRequirement_Input20'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input21" value="{{ data['FinancialRequirement_Input21'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input22" value="{{ data['FinancialRequirement_Input22'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input23" value="{{ data['FinancialRequirement_Input23'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input24" value="{{ data['FinancialRequirement_Input24'] }}"  disabled></td>
+
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">Total</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input25" value="{{ data['FinancialRequirement_Input25'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input26" value="{{ data['FinancialRequirement_Input26'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input27" value="{{ data['FinancialRequirement_Input27'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input28" value="{{ data['FinancialRequirement_Input28'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input29" value="{{ data['FinancialRequirement_Input29'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input30" value="{{ data['FinancialRequirement_Input30'] }}"  disabled></td>
+                                        </tr> 
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">N</th>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">N+1</th>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">N+2</th>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">N+3</th>
+                                                    <th scope="col" class="text-nowrap">&nbsp;</th>
+                                                    <th scope="col" class="text-nowrap">N+4</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>                                                           
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2. Besoins à court terme (après amortissements)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2.1. Créances clients </td>
+                                        </tr>                                                                                
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>Jours réels de ventes</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>Exceptionnel</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DSO</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DSO</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DSO</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DSO</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Véhicules neufs</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input31" value="{{ data['FinancialRequirement_Input31'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input32" value="{{ data['FinancialRequirement_Input32'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input33" value="{{ data['FinancialRequirement_Input33'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input34" value="{{ data['FinancialRequirement_Input34'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input35" value="{{ data['FinancialRequirement_Input35'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input36" value="{{ data['FinancialRequirement_Input36'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input37" value="{{ data['FinancialRequirement_Input37'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input38" value="{{ data['FinancialRequirement_Input38'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input39" value="{{ data['FinancialRequirement_Input39'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input40" value="{{ data['FinancialRequirement_Input40'] }}"  disabled></td>
+                                            </tr>
+
+                                        <tr>
+                                            <td>Atelier DAF </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input41" value="{{ data['FinancialRequirement_Input41'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input42" value="{{ data['FinancialRequirement_Input42'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input43" value="{{ data['FinancialRequirement_Input43'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input44" value="{{ data['FinancialRequirement_Input44'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input45" value="{{ data['FinancialRequirement_Input45'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input46" value="{{ data['FinancialRequirement_Input46'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input47" value="{{ data['FinancialRequirement_Input47'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input48" value="{{ data['FinancialRequirement_Input48'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input49" value="{{ data['FinancialRequirement_Input49'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input50" value="{{ data['FinancialRequirement_Input50'] }}"  disabled></td>
+                                        </tr> 
+                                       
+                                        <tr>
+                                            <td>Pièces counter DAF</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input51" value="{{ data['FinancialRequirement_Input51'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input52" value="{{ data['FinancialRequirement_Input52'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input53" value="{{ data['FinancialRequirement_Input53'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input54" value="{{ data['FinancialRequirement_Input54'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input55" value="{{ data['FinancialRequirement_Input55'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input56" value="{{ data['FinancialRequirement_Input56'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input57" value="{{ data['FinancialRequirement_Input57'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input58" value="{{ data['FinancialRequirement_Input58'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input59" value="{{ data['FinancialRequirement_Input59'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input60" value="{{ data['FinancialRequirement_Input60'] }}"  disabled></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Huiles & lubrifiants</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input61" value="{{ data['FinancialRequirement_Input61'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input62" value="{{ data['FinancialRequirement_Input62'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input63" value="{{ data['FinancialRequirement_Input63'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input64" value="{{ data['FinancialRequirement_Input64'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input65" value="{{ data['FinancialRequirement_Input65'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input66" value="{{ data['FinancialRequirement_Input66'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input67" value="{{ data['FinancialRequirement_Input67'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input68" value="{{ data['FinancialRequirement_Input68'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input69" value="{{ data['FinancialRequirement_Input69'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input70" value="{{ data['FinancialRequirement_Input70'] }}"  disabled></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td>Provisionner les créances douteuses</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input72" value="{{ data['FinancialRequirement_Input72'] }}" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input74" value="{{ data['FinancialRequirement_Input74'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input76" value="{{ data['FinancialRequirement_Input76'] }}"   disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input78" value="{{ data['FinancialRequirement_Input78'] }}" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input80" value="{{ data['FinancialRequirement_Input80'] }}"   disabled></td>
+                                            
+                                        </tr>
+                                        <tr class="tota">
+                                            <td>Total </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input82" value="{{ data['FinancialRequirement_Input82'] }}"   disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input84" value="{{ data['FinancialRequirement_Input84'] }}"   disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input86" value="{{ data['FinancialRequirement_Input86'] }}"   disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input88" value="{{ data['FinancialRequirement_Input88'] }}"   disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input90" value="{{ data['FinancialRequirement_Input90'] }}"   disabled></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2.2. Inventories</td>
+                                        </tr>                                     
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>Jours disponibles</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>                                            
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nouveaux camions</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input91" value="{{ data['FinancialRequirement_Input91'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input92" value="{{ data['FinancialRequirement_Input92'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input93" value="{{ data['FinancialRequirement_Input93'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input94" value="{{ data['FinancialRequirement_Input94'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input95" value="{{ data['FinancialRequirement_Input95'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input96" value="{{ data['FinancialRequirement_Input96'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input97" value="{{ data['FinancialRequirement_Input97'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input98" value="{{ data['FinancialRequirement_Input98'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input99" value="{{ data['FinancialRequirement_Input99'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input100" value="{{ data['FinancialRequirement_Input100'] }}"  disabled></td>
+                                        </tr> 
+                                        
+                                        <tr>
+                                            <td>Modification des pièces en stock</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input102" value="{{ data['FinancialRequirement_Input102'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input104" value="{{ data['FinancialRequirement_Input104'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input106" value="{{ data['FinancialRequirement_Input106'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input108" value="{{ data['FinancialRequirement_Input108'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input110" value="{{ data['FinancialRequirement_Input110'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="tota">Total </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input112" value="{{ data['FinancialRequirement_Input112'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input114" value="{{ data['FinancialRequirement_Input114'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input116" value="{{ data['FinancialRequirement_Input116'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input118" value="{{ data['FinancialRequirement_Input118'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input120" value="{{ data['FinancialRequirement_Input120'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2.3. Dettes fournisseurs</td>
+                                        </tr>                                     
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>Jours de Dettes Exceptionnels </td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>                                            
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>DOH</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input121" value="{{ data['FinancialRequirement_Input121'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input122" value="{{ data['FinancialRequirement_Input122'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input123" value="{{ data['FinancialRequirement_Input123'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input124" value="{{ data['FinancialRequirement_Input124'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input125" value="{{ data['FinancialRequirement_Input125'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input126" value="{{ data['FinancialRequirement_Input126'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input127" value="{{ data['FinancialRequirement_Input127'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input128" value="{{ data['FinancialRequirement_Input128'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input129" value="{{ data['FinancialRequirement_Input129'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input130" value="{{ data['FinancialRequirement_Input130'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Véhicules neufs</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input131" value="{{ data['FinancialRequirement_Input131'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input132" value="{{ data['FinancialRequirement_Input132'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input133" value="{{ data['FinancialRequirement_Input133'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input134" value="{{ data['FinancialRequirement_Input134'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input135" value="{{ data['FinancialRequirement_Input135'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input136" value="{{ data['FinancialRequirement_Input136'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input137" value="{{ data['FinancialRequirement_Input137'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input138" value="{{ data['FinancialRequirement_Input138'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input139" value="{{ data['FinancialRequirement_Input139'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input140" value="{{ data['FinancialRequirement_Input140'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Pièces</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input141" value="{{ data['FinancialRequirement_Input141'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input142" value="{{ data['FinancialRequirement_Input142'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input143" value="{{ data['FinancialRequirement_Input143'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input144" value="{{ data['FinancialRequirement_Input144'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input145" value="{{ data['FinancialRequirement_Input145'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input146" value="{{ data['FinancialRequirement_Input146'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input147" value="{{ data['FinancialRequirement_Input147'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input148" value="{{ data['FinancialRequirement_Input148'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input149" value="{{ data['FinancialRequirement_Input149'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input150" value="{{ data['FinancialRequirement_Input150'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Huiles & lubrifiants</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input151" value="{{ data['FinancialRequirement_Input151'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input152" value="{{ data['FinancialRequirement_Input152'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input153" value="{{ data['FinancialRequirement_Input153'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input154" value="{{ data['FinancialRequirement_Input154'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input155" value="{{ data['FinancialRequirement_Input155'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input156" value="{{ data['FinancialRequirement_Input156'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input157" value="{{ data['FinancialRequirement_Input157'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input158" value="{{ data['FinancialRequirement_Input158'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input159" value="{{ data['FinancialRequirement_Input159'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input160" value="{{ data['FinancialRequirement_Input160'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">Total </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input162" value="{{ data['FinancialRequirement_Input162'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input164" value="{{ data['FinancialRequirement_Input164'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input166" value="{{ data['FinancialRequirement_Input166'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input168" value="{{ data['FinancialRequirement_Input168'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input170" value="{{ data['FinancialRequirement_Input170'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dépenses</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input171" value="{{ data['FinancialRequirement_Input171'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input172" value="{{ data['FinancialRequirement_Input172'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input173" value="{{ data['FinancialRequirement_Input173'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input174" value="{{ data['FinancialRequirement_Input174'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input175" value="{{ data['FinancialRequirement_Input175'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input176" value="{{ data['FinancialRequirement_Input176'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input177" value="{{ data['FinancialRequirement_Input177'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input178" value="{{ data['FinancialRequirement_Input178'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input179" value="{{ data['FinancialRequirement_Input179'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input180" value="{{ data['FinancialRequirement_Input180'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">Total des dettes fournisseurs</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input182" value="{{ data['FinancialRequirement_Input182'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input184" value="{{ data['FinancialRequirement_Input184'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input186" value="{{ data['FinancialRequirement_Input186'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input188" value="{{ data['FinancialRequirement_Input188'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="" value="" class = "deleted" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input190" value="{{ data['FinancialRequirement_Input190'] }}"  disabled></td>
+                                        </tr>                                                                                                                                                                                                         
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2.4.  TVA sur les investissements (et une partie des encours à payer)</td>
+                                        </tr>                                     
+                                        <tr>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>Délai de paiement standard en jours</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>journées</td>                                            
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>journées</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>journées</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                            <td>journées</td>
+                                            <td><input class="deleted" type="number" step='any' id="row-1-age"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>TVA sur les immobilisations corporelles</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input191" value="{{ data['FinancialRequirement_Input191'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input192" value="{{ data['FinancialRequirement_Input192'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input193" value="{{ data['FinancialRequirement_Input193'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input194" value="{{ data['FinancialRequirement_Input194'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input195" value="{{ data['FinancialRequirement_Input195'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input196" value="{{ data['FinancialRequirement_Input196'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input197" value="{{ data['FinancialRequirement_Input197'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input198" value="{{ data['FinancialRequirement_Input198'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input199" value="{{ data['FinancialRequirement_Input199'] }}"  required></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input200" value="{{ data['FinancialRequirement_Input200'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2.5. Besoins totaux à court terme</td>
+                                        </tr>                                     
+                                        <tr>
+                                            <td>Inventaire (+)</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input201" value="{{ data['FinancialRequirement_Input201'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input202" value="{{ data['FinancialRequirement_Input202'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input203" value="{{ data['FinancialRequirement_Input203'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input204" value="{{ data['FinancialRequirement_Input204'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input205" value="{{ data['FinancialRequirement_Input205'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total des créances clients (+)</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input206" value="{{ data['FinancialRequirement_Input206'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input207" value="{{ data['FinancialRequirement_Input207'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input208" value="{{ data['FinancialRequirement_Input208'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input209" value="{{ data['FinancialRequirement_Input209'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input210" value="{{ data['FinancialRequirement_Input210'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Total des dettes fournisseurs (-)</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input211" value="{{ data['FinancialRequirement_Input211'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input212" value="{{ data['FinancialRequirement_Input212'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input213" value="{{ data['FinancialRequirement_Input213'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input214" value="{{ data['FinancialRequirement_Input214'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input215" value="{{ data['FinancialRequirement_Input215'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>TVA sur les investissements (-)</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input216" value="{{ data['FinancialRequirement_Input216'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input217" value="{{ data['FinancialRequirement_Input217'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input218" value="{{ data['FinancialRequirement_Input218'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input219" value="{{ data['FinancialRequirement_Input219'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input220" value="{{ data['FinancialRequirement_Input220'] }}"  disabled></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Solde TVA</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input221" value="{{ data['FinancialRequirement_Input221'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input222" value="{{ data['FinancialRequirement_Input222'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input223" value="{{ data['FinancialRequirement_Input223'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input224" value="{{ data['FinancialRequirement_Input224'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input225" value="{{ data['FinancialRequirement_Input225'] }}"  disabled></td>
+                                                                                
+                                        </tr>
+                                        <tr>
+                                            <td>Cash (+)</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input226" value="{{ data['FinancialRequirement_Input226'] }}"  required></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input227" value="{{ data['FinancialRequirement_Input227'] }}"  required></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input228" value="{{ data['FinancialRequirement_Input228'] }}"  required></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input229" value="{{ data['FinancialRequirement_Input229'] }}"  required></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input230" value="{{ data['FinancialRequirement_Input230'] }}"  required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dividendes</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input231" value="{{ data['FinancialRequirement_Input231'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input232" value="{{ data['FinancialRequirement_Input232'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input233" value="{{ data['FinancialRequirement_Input233'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input234" value="{{ data['FinancialRequirement_Input234'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input235" value="{{ data['FinancialRequirement_Input235'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">Exigences à court terme</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input236" value="{{ data['FinancialRequirement_Input236'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input237" value="{{ data['FinancialRequirement_Input237'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input238" value="{{ data['FinancialRequirement_Input238'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input239" value="{{ data['FinancialRequirement_Input239'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input240" value="{{ data['FinancialRequirement_Input240'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moyens disponibles à court terme</td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input241" value="{{ data['FinancialRequirement_Input241'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input242" value="{{ data['FinancialRequirement_Input242'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input243" value="{{ data['FinancialRequirement_Input243'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input244" value="{{ data['FinancialRequirement_Input244'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input245" value="{{ data['FinancialRequirement_Input245'] }}"  disabled></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">Besoins totaux (LT + ST)</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input246" value="{{ data['FinancialRequirement_Input246'] }}"  disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input247" value="{{ data['FinancialRequirement_Input247'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input248" value="{{ data['FinancialRequirement_Input248'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input249" value="{{ data['FinancialRequirement_Input249'] }}"  disabled></td>
+                                            <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input250" value="{{ data['FinancialRequirement_Input250'] }}"  disabled></td>
+                                                                                        <td><input class='deleted' type="number" step='any' id="row-1-age" name="" value="" disabled></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="FinancialRequirement_Input251" value="{{ data['FinancialRequirement_Input251'] }}"  disabled></td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                                    <div class="space"></div>
+                                    <div class=" button-div col-xl-4 col-md-6 col-sm-12 mb-2">
+                                        <button type="submit" id='update-btn' onclick="changeActionUpdate()" class="submit buttons btn btn-success" >Soumettre</button>
+                                    </div>  
+                             
+                        </div>
+                                <div class="card">
+                                    <div class="card-header border-bottom">
+                                        <h4 class="card-title">Supprimer le rapport</h4>
+                                    </div>
+                                    <div class="card-body py-2 my-25">
+                                        <div class="alert alert-warning">
+                                            <h4 class="alert-heading">Voulez-vous vraiment supprimer ce rapport ?</h4>
+                                            <div class="alert-body fw-normal">
+                                                Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain.
+                                            </div>
+                                        </div>
+
+                                    <form id="formAccountDeactivation" class="validate-form" onsubmit="return false">
+                                        <div>
+                                            <button type="submit" onclick="changeActionDelete()" class="btn btn-danger deactivate-account mt-1">Supprimer le rapport</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </form>                              
+                    </div>
+                </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Tim</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../static/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../static/js/core/app-menu.js"></script>
+    <script src="../static/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+     <script>
+        function changeActionUpdate() {
+            document.getElementById("vehicleform").action = '{{url_for("financialrequirements.financialrequirements_update")}}';
+        }
+        document.addEventListener('keydown', function(event){
+            var code = event.keyCode || event.which;
+            if (code === 9) {  
+                changeActionUpdate();
+                /*alert("Hello Tab key")*/
+                document.getElementById("vehicleform").submit();
+            }
+        });
+    </script>
+    <script>
+        function changeActionDelete() {
+            var result = confirm("Once deleted data can't be recovered, Are you sure you want to delete?");
+            if (result) {
+                document.getElementById("vehicleform").action = '{{url_for("financialrequirements.financialrequirements_delete")}}';
+            }    
+        }
+
+        let inputElt = document.getElementById('input');
+        let btn = document.getElementById('sbmit-btn');
+        let update = document.getElementById('update-btn');
+
+        inputElt.addEventListener("input", function(){
+        btn.disabled = (this.value === '');
+        });
+
+        if (btn.disabled = true ){
+            update.disabled = false
+        } else (update.disabled = true)
+    </script>     
+    <!--DataBase Scripts-->
+
+    <script>
+        $(document).ready(function () {
+            // Function to handle database switching
+            function switchDatabase(databaseName) {
+                // Send a POST request to switch to the selected database
+                $.ajax({
+                    url: "{{ url_for('db.switch_db', db='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'POST',
+                    success: function (data) {
+                        // If the database is switched successfully, reload the page
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error switching the database, show an error message
+                        alert('Error switching database: ' + error);
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                // Function to toggle the modal
+                $("#createDatabaseButton").click(function () {
+                    $("#addConfirmation").toggle();
+                });
+
+                // Function to handle adding a new database
+                $("#confirmAddButton").click(function () {
+                    var dbName = $("#dbNameInput").val().trim(); // Get the entered database name
+                    if (dbName !== "") {
+                        // Call createDatabase function with the entered database name
+                        createDatabase(dbName);
+                        // Hide the modal
+                        $("#addConfirmation").hide();
+                    } else {
+                        alert("Please enter a valid database name.");
+                    }
+                });
+
+                // Function to create a new database
+                function createDatabase(dbName) {
+                    console.log("Creating database", dbName)
+                    // Send a POST request to create a new database
+                    $.ajax({
+                        url: "{{ url_for('db.create_db') }}",
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ db_name: dbName }),
+                        success: function (data) {
+                            // If the database is created successfully, notify the user
+                            alert(data.message); // Display the success message returned from the server
+                            // Refresh the list of databases
+                            getAndDisplayDatabases();
+                        },
+                        error: function (xhr, status, error) {
+                            // If there's an error creating the database, show an error message
+                            alert('Error creating database: ' + error);
+                        }
+                    });
+                }
+            });
+
+            // Function to toggle the visibility of a section
+            $("#createDatabase").click(function () {
+                $("#sectionToToggle").toggle();
+                createDatabase(); // Call createDatabase function when the button is clicked
+            });
+
+            // Function to display the delete confirmation modal
+            function showDeleteConfirmation(databaseName) {
+                // Decode the database name before displaying it
+                var decodedDatabaseName = decodeURIComponent(databaseName);
+                console.log('Database Name:', decodedDatabaseName);
+                // Set the text of the delete confirmation modal to include the database name
+                $('#deleteDatabaseName').text(decodedDatabaseName);
+                // Show the delete confirmation modal
+                $('#deleteConfirmation').show();
+            }
+
+            // Function to retrieve the list of databases and display them to the user
+            function getAndDisplayDatabases() {
+                // Send a GET request to your Flask backend to retrieve the list of databases
+                $.ajax({
+                    url: "{{ url_for('db.list_databases') }}",
+                    method: 'GET',
+                    success: function (data) {
+                        // If the list of databases is retrieved successfully, display it to the user
+                        var databaseList = $('#databaseList');
+                        databaseList.empty(); // Clear previous database entries
+
+                        // Append each database name to the databaseList div
+                        data.databases.forEach(function (database) {
+                            // Create a div for each database with flex styling
+                            var databaseElement = $('<div class="database d-flex align-items-center" style="padding: 4px; width: 85%; margin-left: 20px;"></div>');
+                            // Create a span for the database name
+                            var nameElement = $('<span class="flex-grow-1">' + database + '</span>');
+                            // Create a button for delete action
+                            var deleteButton = $('<button class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>');
+
+                            // Append the name and delete button to the database element
+                            databaseElement.append(nameElement);
+                            databaseElement.append(deleteButton);
+
+                            // Append the database element to the databaseList div
+                            databaseList.append(databaseElement);
+
+                            // Add click event for database name
+                            nameElement.click(function () {
+                                switchDatabase(database); // Switch database when clicked
+                            });
+
+                            // Add click event for delete button
+                            deleteButton.click(function () {
+                                // Encode the database name before passing it to the function
+                                var encodedDatabaseName = encodeURIComponent(database);
+                                deleteDatabase(encodedDatabaseName); // Trigger deletion process
+                            });
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error retrieving the list of databases, show an error message
+                        alert('Error retrieving databases: ' + error);
+                    }
+                });
+            }
+
+            // Function to delete the database
+            function deleteDatabase(databaseName) {
+                // Send a DELETE request to your Flask backend to delete the selected database
+                $.ajax({
+                    url: "{{ url_for('db.delete_db', db_name='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'DELETE',
+                    success: function (data) {
+                        // If the database is deleted successfully, notify the user
+                        alert(data.message); // Display the success message returned from the server
+                        // Refresh the list of databases
+                        getAndDisplayDatabases();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error deleting the database, show an error message
+                        alert('Error deleting database: ' + error);
+                    }
+                });
+            }
+
+            // Click event for delete confirmation modal's "No" button
+            $('#deleteCancel').click(function () {
+                // Close the delete confirmation modal without deleting the database
+                $('#deleteConfirmation').hide();
+            });
+
+            // Call the function to retrieve and display databases when the document is ready
+            getAndDisplayDatabases();
+
+        });
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

@@ -1,1 +1,2 @@
-# Tim_Project
+# TIM
+simple ERP for Handling business

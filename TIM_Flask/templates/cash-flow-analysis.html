@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="author" content="PIXINVENT">
+    <title>Plan d'affaires financier - Tim </title>
+    <link rel="apple-touch-icon" href="../static/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav
+        class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon"
+                                data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav bookmark-icons">
+                    <li class="nav-item d-none d-lg-block"> Bonjour &#128075; </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link nav-link-style">
+                        <i class="ficon" data-feather="moon">
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link"
+                        id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder"> </span>    <span
+                                class="user-status">Admin
+                            </span>
+                        </div>
+
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="{{url_for('admin.profile')}}">
+                            <i class="me-50" data-feather="user">
+                            </i>
+                            Profil
+                        </a>
+                        <a class="dropdown-item" href="{{url_for('auth.login')}}">
+                            <i class="me-50" data-feather="power">
+                            </i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="me-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/dealer-area.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <!-- BEGIN: Header-->
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing
+                            Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd
+                            Developer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital
+                            Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web
+                            Designer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-8.jpg" alt="png"
+                            height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-1.jpg" alt="png"
+                            height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd
+                            Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-14.jpg" alt="png"
+                            height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing
+                            Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-6.jpg" alt="png"
+                            height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a
+                class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="me-75"
+                        data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand"
+                        href="../../../html/ltr/vertical-menu-template/dealer-area.html"><span class="brand-logo">
+
+                            <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
+                            class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary"
+                            data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item "><a class="d-flex align-Articles-center" href="{{url_for('admin.index')}}"><i
+                            data-feather="home"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-Articles-center" href="{{url_for('admin.profile')}}"><i
+                            data-feather="user"></i><span class="menu-title text-truncate"
+                            data-i18n="Calendar">Profil</span></a>
+                </li>
+                <li class="nav-item active"><a class="d-flex align-Articles-center" href="{{url_for('calculation.company')}}"><i
+                            data-feather="align-justify"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords" >Plan d'affaires financier</span></a>
+                </li>
+                <li class=" nav-item disabled"><a class="d-flex align-Articles-center" href="dealer-area.html"><i
+                            data-feather="shield"></i><span class="menu-title text-truncate"
+                            data-i18n="Tableau de bords">Acces & Visibilité</span></a>
+                    <ul class="menu-content">
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="app-access-roles.html"><i
+                                    data-feather="circle"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Acces</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-Articles-center" href="layout-empty.html"><i
+                                    data-feather="list"></i><span class="menu-title text-truncate"
+                                    data-i18n="Calendar">Visibilité</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <div id="databaseManagement">
+                    
+                
+                    <!-- Button to create a new database -->
+                    <button id="createDatabaseButton" class="menu-title text-truncate" style="padding: 9px; margin-left: 18px; margin-top: 20px; margin-bottom: 10px; cursor: pointer; border-color: transparent; border-radius: 5px; width: 85%;">
+                        <i class="me-50" data-feather="plus-circle" style="height: 20px; width: 20px;"></i>
+                        Ajouter une version
+                    </button>
+                    
+                    <!-- Modal for adding a new database -->
+                    <div id="addConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Ajouter une nouvelle version</h5>
+                        <label for="dbNameInput">Nom de la version:</label>
+                        <input type="text" id="dbNameInput">
+                        <button id="confirmAddButton" class="delete-button ml-2" style="margin-top: 4px; border-radius: 5px; border-color: transparent; background-color: #ebffed; color: #0aad0aff;">Valider</button>
+                    </div>
+
+                
+                    <!-- Divs to switch between existing databases -->
+                    <div id="databaseList" class="d-flex flex-column align-items-start">
+                        <!-- Databases will be added here dynamically -->
+                    </div>
+                
+                    <!-- Popup for confirmation before deleting a database -->
+                    <div id="deleteConfirmation" style="display: none; width: 80%; margin-left: 20px; margin-top: 20px;">
+                        <h5>Confirmer la suppression.</h5>
+                        <p>Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain. </p>
+                        <button id="deleteConfirm" class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>
+
+                    </div>
+                </div>
+                <li class=" navigation-header">
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">Plan d'affaires financier</h2>
+                            <div class="breadcrumb-wrapper breadcrumb-scroll">
+                                <ol class="breadcrumb breadcrumb-dashes scroll-bread">
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('shorts.shorts')}}">Shorts </a>  
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('calculationshorts.calculationshorts')}}">Calculation Shorts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vehicleparc.vehicle')}}">Vehicle Parc</a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerarea.dealer')}}">7.1 Dealer area </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnovervehicle.turnovervehicle')}}">7.2.1 Turnover Vehicles </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnover.turnoverpart')}}">7.2.2 Turnover Parts </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('turnoverservices.turnoverservices')}}">7.3 Turnover Service & Body </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('costofsale.costofsale')}}">7.3 Cost of sales </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('salaries.salaries')}}">7.4.1 Salaries & Wages </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('sellingoper.sellingoper')}}"> 7.4.2 Selling & Oper.expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('invdepr.invdepr')}}">7.4.3 Inv. & Depr. </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialrequirements.financialrequirements')}}">7.5.1 Financial Requirements </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('financialincome.financialincome')}}">7.5.2 Fin. Income & Expenses </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('vat.vat')}}">7.5.3 VAT </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activitycontribution.activitycontribution')}}">7.6.1 Activity Contribution </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('activityanalysis.activityanalysis')}}">7.6.2 Activity analysis </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('pl.pl')}}">7.7 P&L </a> 
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('dealerbenchmark.dealerbenchmark')}}">7.8 Dealer Benchmark </a>                                              
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceassets.balanceassets')}}">7.9.1 Balance Assets </a>                                                                            
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('balanceliabilities.balanceliabilities')}}">7.9.2 Balance Liabilities </a>
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('ratiobalance.ratiobalance')}}">7.10 Ratio's Balance </a>                                        
+                                    <li class="bread-item breadcrumb-item"><a class="bread" href="{{url_for('cashflowanalysis.cashflowanalysis')}}">7.11 Cash Flow Analysis </a>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                <!-- Responsive tables start -->
+                <div class="row" id="table-responsive">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">7.11 Cash Flow Analysis</h4>
+                            </div>
+                               <div class="space"></div>  
+                                <form id="vehicleform" class="validate-form mt-2 pt-50" method="post">                                                       
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">&nbsp;</th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="CashFlow_Header1" value="{{ data['CashFlow_Header1'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="CashFlow_Header2" value="{{ data['CashFlow_Header2'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="CashFlow_Header3" value="{{ data['CashFlow_Header3'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="CashFlow_Header4" value="{{ data['CashFlow_Header4'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                            <th scope="col" class="text-nowrap"><input type="number" step='any' id="row-1-age" name="CashFlow_Header5" value="{{ data['CashFlow_Header5'] }}" id ='input' disabled style="border: none; font-weight: bold;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">1. Flux de trésorerie provenant des activités opérationnelles</td>
+                                        </tr>                                         
+                                        <tr class="tota">
+                                            <td>1.1 Trésorerie brute</td>
+                                            <td><input id='input' type="text" id="row-1-age" name="CashFlow_input1" value="{{ data['CashFlow_input1'] }}" required ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input2" value="{{ data['CashFlow_input2'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input3" value="{{ data['CashFlow_input3'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input4" value="{{ data['CashFlow_input4'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input5" value="{{ data['CashFlow_input5'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bénéfice net / perte</td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input6" value="{{ data['CashFlow_input6'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input7" value="{{ data['CashFlow_input7'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input8" value="{{ data['CashFlow_input8'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input9" value="{{ data['CashFlow_input9'] }}" disabled ></td>
+                                            <td><input type="text" id="row-1-age" name="CashFlow_input10" value="{{ data['CashFlow_input10'] }}" disabled ></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Dépréciation</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input11" value="{{ data['CashFlow_input11'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input12" value="{{ data['CashFlow_input12'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input13" value="{{ data['CashFlow_input13'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input14" value="{{ data['CashFlow_input14'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input15" value="{{ data['CashFlow_input15'] }}" disabled ></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">A. Total</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input16" value="{{ data['CashFlow_input16'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input17" value="{{ data['CashFlow_input17'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input18" value="{{ data['CashFlow_input18'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input19" value="{{ data['CashFlow_input19'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input20" value="{{ data['CashFlow_input20'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">B. 1.2 Dispositions</td>
+                                           <td><input type="number" step='any' id="row-1-age" name="CashFlow_input21" value="{{ data['CashFlow_input21'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input22" value="{{ data['CashFlow_input22'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input23" value="{{ data['CashFlow_input23'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input24" value="{{ data['CashFlow_input24'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input25" value="{{ data['CashFlow_input25'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">1.3 Changer le fonds de roulement</td>
+
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>1.2.1 Évolution des actifs circulants</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>(Augmentation) / Diminution des comptes débiteurs</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input31" value="{{ data['CashFlow_input31'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input32" value="{{ data['CashFlow_input32'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input33" value="{{ data['CashFlow_input33'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input34" value="{{ data['CashFlow_input34'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input35" value="{{ data['CashFlow_input35'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(Augmentation)/Diminution des stocks</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input36" value="{{ data['CashFlow_input36'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input37" value="{{ data['CashFlow_input37'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input38" value="{{ data['CashFlow_input38'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input39" value="{{ data['CashFlow_input39'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input40" value="{{ data['CashFlow_input40'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(Augmentation)/Diminution des autres actifs courants (hors trésorerie/banques)</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input41" value="{{ data['CashFlow_input41'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input42" value="{{ data['CashFlow_input42'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input43" value="{{ data['CashFlow_input43'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input44" value="{{ data['CashFlow_input44'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input45" value="{{ data['CashFlow_input45'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input46" value="{{ data['CashFlow_input46'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input47" value="{{ data['CashFlow_input47'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input48" value="{{ data['CashFlow_input48'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input49" value="{{ data['CashFlow_input49'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input50" value="{{ data['CashFlow_input50'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.2.2 Évolution des passifs courants</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input51" value="{{ data['CashFlow_input51'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input52" value="{{ data['CashFlow_input52'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input53" value="{{ data['CashFlow_input53'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input54" value="{{ data['CashFlow_input54'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input55" value="{{ data['CashFlow_input55'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Augmentation/(diminution) des comptes créditeurs</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input56" value="{{ data['CashFlow_input56'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input57" value="{{ data['CashFlow_input57'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input58" value="{{ data['CashFlow_input58'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input59" value="{{ data['CashFlow_input59'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input60" value="{{ data['CashFlow_input60'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Augmentation/(Diminution) des autres passifs courants (hors banques & financement)</td>
+
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input61" value="{{ data['CashFlow_input61'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input62" value="{{ data['CashFlow_input62'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input63" value="{{ data['CashFlow_input63'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input64" value="{{ data['CashFlow_input64'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input65" value="{{ data['CashFlow_input65'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td> Total </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input66" value="{{ data['CashFlow_input66'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input67" value="{{ data['CashFlow_input67'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input68" value="{{ data['CashFlow_input68'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input69" value="{{ data['CashFlow_input69'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input70" value="{{ data['CashFlow_input70'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td> C. Variation totale du fonds de roulement </td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input71" value="{{ data['CashFlow_input71'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input72" value="{{ data['CashFlow_input72'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input73" value="{{ data['CashFlow_input73'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input74" value="{{ data['CashFlow_input74'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input75" value="{{ data['CashFlow_input75'] }}" disabled ></td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="tota">Cash-flow opérationnel (A+B+C)</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input76" value="{{ data['CashFlow_input76'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input77" value="{{ data['CashFlow_input77'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input78" value="{{ data['CashFlow_input78'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input79" value="{{ data['CashFlow_input79'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input80" value="{{ data['CashFlow_input80'] }}" disabled ></td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">2. Flux de trésorerie provenant des activités d'investissement</td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td>(Augmentation)/Diminution des immobilisations incorporelles</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input81" value="{{ data['CashFlow_input81'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input82" value="{{ data['CashFlow_input82'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input83" value="{{ data['CashFlow_input83'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input84" value="{{ data['CashFlow_input84'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input85" value="{{ data['CashFlow_input85'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(Augmentation)/Diminution des immobilisations corporelles (terrain, bâtiment, équipement,…)</td>
+
+
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input86" value="{{ data['CashFlow_input86'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input87" value="{{ data['CashFlow_input87'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input88" value="{{ data['CashFlow_input88'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input89" value="{{ data['CashFlow_input89'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input90" value="{{ data['CashFlow_input90'] }}" disabled ></td>
+                                        </tr>  
+                                        <tr>
+                                            <td>(Augmentation)/Diminution des immobilisations financières</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input91" value="{{ data['CashFlow_input91'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input92" value="{{ data['CashFlow_input92'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input93" value="{{ data['CashFlow_input93'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input94" value="{{ data['CashFlow_input94'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input95" value="{{ data['CashFlow_input95'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">D. Flux de trésorerie provenant des activités d'investissement</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input96" value="{{ data['CashFlow_input96'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input97" value="{{ data['CashFlow_input97'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input98" value="{{ data['CashFlow_input98'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input99" value="{{ data['CashFlow_input99'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input100" value="{{ data['CashFlow_input100'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap header-data" colspan="13">3. Flux de trésorerie provenant des activités de financement</td>
+                                        </tr>                                          
+                                        <tr>
+                                            <td>Augmentation/(diminution) des capitaux propres (hors résultat)</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input101" value="{{ data['CashFlow_input101'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input102" value="{{ data['CashFlow_input102'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input103" value="{{ data['CashFlow_input103'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input104" value="{{ data['CashFlow_input104'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input105" value="{{ data['CashFlow_input105'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Augmentation/(diminution) des fonds à long terme</td>
+
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input106" value="{{ data['CashFlow_input106'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input107" value="{{ data['CashFlow_input107'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input108" value="{{ data['CashFlow_input108'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input109" value="{{ data['CashFlow_input109'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input110" value="{{ data['CashFlow_input110'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Augmentation/(diminution) du financement des stocks de camions</td>
+
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input111" value="{{ data['CashFlow_input111'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input112" value="{{ data['CashFlow_input112'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input113" value="{{ data['CashFlow_input113'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input114" value="{{ data['CashFlow_input114'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input115" value="{{ data['CashFlow_input115'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">E. Flux de trésorerie provenant des activités de financement</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input116" value="{{ data['CashFlow_input116'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input117" value="{{ data['CashFlow_input117'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input118" value="{{ data['CashFlow_input118'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input119" value="{{ data['CashFlow_input119'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input120" value="{{ data['CashFlow_input120'] }}" disabled ></td>
+                                        </tr>                                        
+              
+                                        <tr>
+                                            <td class="tota">4. Évolution de la liquidité A+B+C+D+E</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input121" value="{{ data['CashFlow_input121'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input122" value="{{ data['CashFlow_input122'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input123" value="{{ data['CashFlow_input123'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input124" value="{{ data['CashFlow_input124'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input125" value="{{ data['CashFlow_input125'] }}" disabled ></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tota">5. Fin de la trésorerie et équivalents</td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input126" value="{{ data['CashFlow_input126'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input127" value="{{ data['CashFlow_input127'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input128" value="{{ data['CashFlow_input128'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input129" value="{{ data['CashFlow_input129'] }}" disabled ></td>
+                                            <td><input type="number" step='any' id="row-1-age" name="CashFlow_input130" value="{{ data['CashFlow_input130'] }}" disabled ></td>
+                                        </tr>                                                                           
+                                    </tbody>
+                                </table>
+                            </div>
+                                    <div class="space"></div>
+                                    <div class=" button-div col-xl-4 col-md-6 col-sm-12 mb-2">
+                                        <button type="submit" id='update-btn' onclick="changeActionUpdate()" class="buttons btn btn-success" >Soumettre</button>
+                                    </div>  
+                             
+                        </div>
+                                <div class="card">
+                                    <div class="card-header border-bottom">
+                                        <h4 class="card-title">Supprimer le rapport</h4>
+                                    </div>
+                                    <div class="card-body py-2 my-25">
+                                        <div class="alert alert-warning">
+                                            <h4 class="alert-heading">Voulez-vous vraiment supprimer ce rapport ?</h4>
+                                            <div class="alert-body fw-normal">
+                                                Une fois que vous supprimez quelque chose, il n'y a pas de retour en arrière. Soyez certain.
+                                            </div>
+                                        </div>
+
+                                    <form id="formAccountDeactivation" class="validate-form" onsubmit="return false">
+                                        <div>
+                                            <button type="submit" onclick="changeActionDelete()" class="btn btn-danger deactivate-account mt-1">Supprimer le rapport</button>
+                                        </div>
+                                    </form>
+                                </form> 
+                                </div>
+                            </div> 
+                    </div>
+                </div>
+                <!-- Responsive tables end -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Tim</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../static/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../static/js/core/app-menu.js"></script>
+    <script src="../static/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+     <script>
+        function changeActionUpdate() {
+            document.getElementById("vehicleform").action = '{{url_for("cashflowanalysis.cashflowanalysis_update")}}';
+        }
+
+        document.addEventListener('keydown', function(event){
+            var code = event.keyCode || event.which;
+            if (code === 9) {  
+                changeActionUpdate();
+                /*alert("Hello Tab key")*/
+                document.getElementById("vehicleform").submit();
+            }
+        });
+    </script>
+    <script>
+        function changeActionDelete() {
+            var result = confirm("Once deleted data can't be recovered, Are you sure you want to delete?");
+            if (result) {
+                document.getElementById("vehicleform").action = '{{url_for("cashflowanalysis.cashflowanalysis_delete")}}';
+            }    
+        }
+
+        let inputElt = document.getElementById('input');
+        let btn = document.getElementById('sbmit-btn');
+        let update = document.getElementById('update-btn');
+
+        inputElt.addEventListener("input", function(){
+        btn.disabled = (this.value === '');
+        });
+
+        if (btn.disabled = true ){
+            update.disabled = false
+        } else (update.disabled = true)
+    </script>     
+    <!--DataBase Scripts-->
+
+    <script>
+        $(document).ready(function () {
+            // Function to handle database switching
+            function switchDatabase(databaseName) {
+                // Send a POST request to switch to the selected database
+                $.ajax({
+                    url: "{{ url_for('db.switch_db', db='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'POST',
+                    success: function (data) {
+                        // If the database is switched successfully, reload the page
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error switching the database, show an error message
+                        alert('Error switching database: ' + error);
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                // Function to toggle the modal
+                $("#createDatabaseButton").click(function () {
+                    $("#addConfirmation").toggle();
+                });
+
+                // Function to handle adding a new database
+                $("#confirmAddButton").click(function () {
+                    var dbName = $("#dbNameInput").val().trim(); // Get the entered database name
+                    if (dbName !== "") {
+                        // Call createDatabase function with the entered database name
+                        createDatabase(dbName);
+                        // Hide the modal
+                        $("#addConfirmation").hide();
+                    } else {
+                        alert("Please enter a valid database name.");
+                    }
+                });
+
+                // Function to create a new database
+                function createDatabase(dbName) {
+                    console.log("Creating database", dbName)
+                    // Send a POST request to create a new database
+                    $.ajax({
+                        url: "{{ url_for('db.create_db') }}",
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ db_name: dbName }),
+                        success: function (data) {
+                            // If the database is created successfully, notify the user
+                            alert(data.message); // Display the success message returned from the server
+                            // Refresh the list of databases
+                            getAndDisplayDatabases();
+                        },
+                        error: function (xhr, status, error) {
+                            // If there's an error creating the database, show an error message
+                            alert('Error creating database: ' + error);
+                        }
+                    });
+                }
+            });
+
+            // Function to toggle the visibility of a section
+            $("#createDatabase").click(function () {
+                $("#sectionToToggle").toggle();
+                createDatabase(); // Call createDatabase function when the button is clicked
+            });
+
+            // Function to display the delete confirmation modal
+            function showDeleteConfirmation(databaseName) {
+                // Decode the database name before displaying it
+                var decodedDatabaseName = decodeURIComponent(databaseName);
+                console.log('Database Name:', decodedDatabaseName);
+                // Set the text of the delete confirmation modal to include the database name
+                $('#deleteDatabaseName').text(decodedDatabaseName);
+                // Show the delete confirmation modal
+                $('#deleteConfirmation').show();
+            }
+
+            // Function to retrieve the list of databases and display them to the user
+            function getAndDisplayDatabases() {
+                // Send a GET request to your Flask backend to retrieve the list of databases
+                $.ajax({
+                    url: "{{ url_for('db.list_databases') }}",
+                    method: 'GET',
+                    success: function (data) {
+                        // If the list of databases is retrieved successfully, display it to the user
+                        var databaseList = $('#databaseList');
+                        databaseList.empty(); // Clear previous database entries
+
+                        // Append each database name to the databaseList div
+                        data.databases.forEach(function (database) {
+                            // Create a div for each database with flex styling
+                            var databaseElement = $('<div class="database d-flex align-items-center" style="padding: 4px; width: 85%; margin-left: 20px;"></div>');
+                            // Create a span for the database name
+                            var nameElement = $('<span class="flex-grow-1">' + database + '</span>');
+                            // Create a button for delete action
+                            var deleteButton = $('<button class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>');
+
+                            // Append the name and delete button to the database element
+                            databaseElement.append(nameElement);
+                            databaseElement.append(deleteButton);
+
+                            // Append the database element to the databaseList div
+                            databaseList.append(databaseElement);
+
+                            // Add click event for database name
+                            nameElement.click(function () {
+                                switchDatabase(database); // Switch database when clicked
+                            });
+
+                            // Add click event for delete button
+                            deleteButton.click(function () {
+                                // Encode the database name before passing it to the function
+                                var encodedDatabaseName = encodeURIComponent(database);
+                                deleteDatabase(encodedDatabaseName); // Trigger deletion process
+                            });
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error retrieving the list of databases, show an error message
+                        alert('Error retrieving databases: ' + error);
+                    }
+                });
+            }
+
+            // Function to delete the database
+            function deleteDatabase(databaseName) {
+                // Send a DELETE request to your Flask backend to delete the selected database
+                $.ajax({
+                    url: "{{ url_for('db.delete_db', db_name='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'DELETE',
+                    success: function (data) {
+                        // If the database is deleted successfully, notify the user
+                        alert(data.message); // Display the success message returned from the server
+                        // Refresh the list of databases
+                        getAndDisplayDatabases();
+                    },
+                    error: function (xhr, status, error) {
+                        // If there's an error deleting the database, show an error message
+                        alert('Error deleting database: ' + error);
+                    }
+                });
+            }
+
+            // Click event for delete confirmation modal's "No" button
+            $('#deleteCancel').click(function () {
+                // Close the delete confirmation modal without deleting the database
+                $('#deleteConfirmation').hide();
+            });
+
+            // Call the function to retrieve and display databases when the document is ready
+            getAndDisplayDatabases();
+
+        });
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

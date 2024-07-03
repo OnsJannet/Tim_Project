@@ -1,0 +1,43 @@
+Dealer Area:
+turnovervehicle:
+Turnover Parts:
+Turnover Service & Bodyshop:
+Cost of Sales:
+Selling & Operating Expenses:
+Financial Income: Requirements:
+Financial Income & Expenses:
+VAT:
+Activity Contribution:
+Activity Analysis:
+Profit & Loss Account:
+Dealer Benchmark:
+Balance Sheet - Liabilities:
+Ratio's Balance Sheet:
+Cash Flow Analysis:
+
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 80px !important;
+padding-left: 6px !important;
+}
+
+input[type=text] {
+    width: 95%;
+    font-size: 13px;
+padding-left: 6px !important;
+}
+
+#row-1-age, #input {
+    width: 90%;
+    font-size: 13px;
+padding-left: 6px !important;
+}
+
+
+Remove inputs:
+Salaries & wages 
+nvestments, Depreciations and Provisions
+
+
+
+<td><input type="number" step='any' id="row-1-age" class = "deleted" disabled></td>

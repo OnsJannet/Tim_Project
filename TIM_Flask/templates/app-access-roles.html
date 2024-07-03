@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="author" content="PIXINVENT">
+    <title>Roles - Tim</title>
+    <link rel="apple-touch-icon" href="../static//images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static//images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/plugins/forms/form-validation.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav bookmark-icons">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><i class="ficon" data-feather="mail"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"><i class="ficon" data-feather="message-square"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Calendar"><i class="ficon" data-feather="calendar"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon" data-feather="check-square"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon text-warning" data-feather="star"></i></a>
+                        <div class="bookmark-input search-input">
+                            <div class="bookmark-input-icon"><i data-feather="search"></i></div>
+                            <input class="form-control input" type="text" placeholder="Bookmark" tabindex="0" data-search="search">
+                            <ul class="search-list search-list-bookmark"></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
+                </li>
+                <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+                <li class="nav-item dropdown dropdown-notification me-25"><a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="ficon" data-feather="bell"></i><span class="badge rounded-pill bg-danger badge-up">5</span></a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 me-auto">Notifications</h4>
+                                <div class="badge rounded-pill badge-light-primary">6 New</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list"><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="../static/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Congratulation Sam 🎉</span>winner!</p><small class="notification-text"> Won the monthly best seller badge.</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="../static/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">New message</span>&nbsp;received</p><small class="notification-text"> You have 10 unread messages</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-danger">
+                                            <div class="avatar-content">MD</div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Revised Order 👋</span>&nbsp;checkout</p><small class="notification-text"> MD Inc. order updated</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-item d-flex align-items-center">
+                                <h6 class="fw-bolder me-auto mb-0">System Notifications</h6>
+                                <div class="form-check form-check-primary form-switch">
+                                    <input class="form-check-input" id="systemNotification" type="checkbox" checked="">
+                                    <label class="form-check-label" for="systemNotification"></label>
+                                </div>
+                            </div><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-danger">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="x"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Server down</span>&nbsp;registered</p><small class="notification-text"> USA Server is down due to high CPU usage</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-success">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="check"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Sales report</span>&nbsp;generated</p><small class="notification-text"> Last month sales report generated</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-warning">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="alert-triangle"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">High memory</span>&nbsp;usage</p><small class="notification-text"> BLR Server using high memory</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-footer"><a class="btn btn-primary w-100" href="#">Read all notifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../static/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a class="dropdown-item" href="page-Profil.html"><i class="me-50" data-feather="user"></i> Profil</a><a class="dropdown-item" href="app-email.html"><i class="me-50" data-feather="mail"></i> Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="me-50" data-feather="check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="me-50" data-feather="message-square"></i> Chats</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="page-account-settings-account.html"><i class="me-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-pricing.html"><i class="me-50" data-feather="credit-card"></i> Pricing</a><a class="dropdown-item" href="page-faq.html"><i class="me-50" data-feather="help-circle"></i> FAQ</a><a class="dropdown-item" href="auth-login-cover.html"><i class="me-50" data-feather="power"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="../static/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="../static/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="me-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-template/dealer-area.html"><span class="brand-logo">
+
+                    <img class="tim-logo-2" src="../static/images/logo/LOGO_TIM.svg"></span>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="Tableau de bord-manager.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Tableau de bords">Tableau de bord</span></a>
+                </li>
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
+                </li>
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="page-account-settings-account.html"><i     data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Calendar">Profil</span></a>
+                        </li>                
+                <li class=" nav-item"><a class="d-flex align-items-center" href="dealer-area.html"><i data-feather="align-justify"></i><span class="menu-title text-truncate" data-i18n="Tableau de bords">Activité</span></a> 
+                    <ul class="menu-content">               
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i     data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Parc Véhicules</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Packs</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Ventes</span></a>
+                        </li> 
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Salariés</span></a>
+                        </li>
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Dépenses</span></a>
+                        </li> 
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Coûts</span></a>
+                        </li>                                                                                                         
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="layout-empty.html"><i data-feather="circle"></i><span class="menu-title text-truncate" data-i18n="Calendar">Utilisateurs</span></a>
+                        </li> 
+                    </ul>
+                </li>                                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <h3>Roles List</h3>
+                <p class="mb-2">
+                    A role provided access to predefined menus and features so that depending <br />
+                    on assigned role an administrator can have access to what he need
+                </p>
+
+                <!-- Role cards -->
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span>Total 4 users</span>
+                                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Vinnie Mostowy" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/2.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Allen Rieske" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/12.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Julee Rossignol" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/6.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kaith D'souza" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/11.png" alt="Avatar" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-1 pt-25">
+                                    <div class="role-heading">
+                                        <h4 class="fw-bolder">Administrator</h4>
+                                        <a href="javascript:;" class="role-edit-modal" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                                            <small class="fw-bolder">Edit Role</small>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-body"><i data-feather="copy" class="font-medium-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span>Total 7 users</span>
+                                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Jimmy Ressula" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/4.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="John Doe" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/1.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kristi Lawker" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/2.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kaith D'souza" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/5.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Danny Paul" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/7.png" alt="Avatar" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-1 pt-25">
+                                    <div class="role-heading">
+                                        <h4 class="fw-bolder">Manager</h4>
+                                        <a href="javascript:;" class="role-edit-modal" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                                            <small class="fw-bolder">Edit Role</small>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-body"><i data-feather="copy" class="font-medium-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span>Total 5 users</span>
+                                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Andrew Tye" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/6.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Rishi Swaat" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/9.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Rossie Kim" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/12.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kim Merchent" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/10.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Sam D'souza" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/8.png" alt="Avatar" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-1 pt-25">
+                                    <div class="role-heading">
+                                        <h4 class="fw-bolder">Users</h4>
+                                        <a href="javascript:;" class="role-edit-modal" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                                            <small class="fw-bolder">Edit Role</small>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-body"><i data-feather="copy" class="font-medium-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span>Total 3 users</span>
+                                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kim Karlos" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/3.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Katy Turner" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/9.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Peter Adward" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/12.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kaith D'souza" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/10.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="John Parker" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/11.png" alt="Avatar" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-1 pt-25">
+                                    <div class="role-heading">
+                                        <h4 class="fw-bolder">Support</h4>
+                                        <a href="javascript:;" class="role-edit-modal" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                                            <small class="fw-bolder">Edit Role</small>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-body"><i data-feather="copy" class="font-medium-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <span>Total 2 users</span>
+                                    <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kim Merchent" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/10.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Sam D'souza" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/6.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Nurvi Karlos" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/3.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Andrew Tye" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/8.png" alt="Avatar" />
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Rossie Kim" class="avatar avatar-sm pull-up">
+                                            <img class="rounded-circle" src="../static//images/avatars/9.png" alt="Avatar" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end mt-1 pt-25">
+                                    <div class="role-heading">
+                                        <h4 class="fw-bolder">Restricted User</h4>
+                                        <a href="javascript:;" class="role-edit-modal" data-bs-toggle="modal" data-bs-target="#addRoleModal">
+                                            <small class="fw-bolder">Edit Role</small>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-body"><i data-feather="copy" class="font-medium-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="d-flex align-items-end justify-content-center h-100">
+                                        <img src="../static//images/illustration/faq-illustrations.svg" class="img-fluid mt-2" alt="Image" width="85" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="card-body text-sm-end text-center ps-sm-0">
+                                        <a href="javascript:void(0)" data-bs-target="#addRoleModal" data-bs-toggle="modal" class="stretched-link text-nowrap add-new-role">
+                                            <span class="btn btn-primary mb-1">Add New Role</span>
+                                        </a>
+                                        <p class="mb-0">Add role, if it does not exist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Role cards -->
+
+                <h3 class="mt-50">Total users with their roles</h3>
+                <p class="mb-2">Find all of your company’s administrator accounts and their associate roles.</p>
+                <!-- table -->
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="user-list-table table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Plan</th>
+                                    <th>Billing</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <!-- table -->
+                <!-- Add Role Modal -->
+                <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+                        <div class="modal-content">
+                            <div class="modal-header bg-transparent">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-5 pb-5">
+                                <div class="text-center mb-4">
+                                    <h1 class="role-title">Add New Role</h1>
+                                    <p>Set role permissions</p>
+                                </div>
+                                <!-- Add role form -->
+                                <form id="addRoleForm" class="row" onsubmit="return false">
+                                    <div class="col-12">
+                                        <label class="form-label" for="modalRoleName">Role Name</label>
+                                        <input type="text" id="modalRoleName" name="modalRoleName" class="form-control" placeholder="Enter role name" tabindex="-1" data-msg="Please enter role name" />
+                                    </div>
+                                    <div class="col-12">
+                                        <h4 class="mt-2 pt-50">Role Permissions</h4>
+                                        <!-- Permission table -->
+                                        <div class="table-responsive">
+                                            <table class="table table-flush-spacing">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">
+                                                            Administrator Access
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Allows a full access to the system">
+                                                                <i data-feather="info"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" id="selectAll" />
+                                                                <label class="form-check-label" for="selectAll"> Select All </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">User Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="userManagementRead" />
+                                                                    <label class="form-check-label" for="userManagementRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="userManagementWrite" />
+                                                                    <label class="form-check-label" for="userManagementWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="userManagementCreate" />
+                                                                    <label class="form-check-label" for="userManagementCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Content Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="contentManagementRead" />
+                                                                    <label class="form-check-label" for="contentManagementRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="contentManagementWrite" />
+                                                                    <label class="form-check-label" for="contentManagementWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="contentManagementCreate" />
+                                                                    <label class="form-check-label" for="contentManagementCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Disputes Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="dispManagementRead" />
+                                                                    <label class="form-check-label" for="dispManagementRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="dispManagementWrite" />
+                                                                    <label class="form-check-label" for="dispManagementWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="dispManagementCreate" />
+                                                                    <label class="form-check-label" for="dispManagementCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Database Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="dbManagementRead" />
+                                                                    <label class="form-check-label" for="dbManagementRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="dbManagementWrite" />
+                                                                    <label class="form-check-label" for="dbManagementWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="dbManagementCreate" />
+                                                                    <label class="form-check-label" for="dbManagementCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Financial Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="finManagementRead" />
+                                                                    <label class="form-check-label" for="finManagementRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="finManagementWrite" />
+                                                                    <label class="form-check-label" for="finManagementWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="finManagementCreate" />
+                                                                    <label class="form-check-label" for="finManagementCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Reporting</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="reportingRead" />
+                                                                    <label class="form-check-label" for="reportingRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="reportingWrite" />
+                                                                    <label class="form-check-label" for="reportingWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="reportingCreate" />
+                                                                    <label class="form-check-label" for="reportingCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">API Control</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="apiRead" />
+                                                                    <label class="form-check-label" for="apiRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="apiWrite" />
+                                                                    <label class="form-check-label" for="apiWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="apiCreate" />
+                                                                    <label class="form-check-label" for="apiCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Repository Management</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="repoRead" />
+                                                                    <label class="form-check-label" for="repoRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="repoWrite" />
+                                                                    <label class="form-check-label" for="repoWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="repoCreate" />
+                                                                    <label class="form-check-label" for="repoCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-nowrap fw-bolder">Payroll</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="payrollRead" />
+                                                                    <label class="form-check-label" for="payrollRead"> Read </label>
+                                                                </div>
+                                                                <div class="form-check me-3 me-lg-5">
+                                                                    <input class="form-check-input" type="checkbox" id="payrollWrite" />
+                                                                    <label class="form-check-label" for="payrollWrite"> Write </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="payrollCreate" />
+                                                                    <label class="form-check-label" for="payrollCreate"> Create </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- Permission table -->
+                                    </div>
+                                    <div class="col-12 text-center mt-2">
+                                        <button type="submit" class="btn btn-primary me-1">Submit</button>
+                                        <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">
+                                            Discard
+                                        </button>
+                                    </div>
+                                </form>
+                                <!--/ Add role form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Add Role Modal -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Tim</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../static//vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../static//vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../static//vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="../static//vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../static//vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="../static//vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../static//vendors/js/tables/datatable/buttons.bootstrap5.min.js"></script>
+    <script src="../static//vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../static//vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../static//js/core/app-menu.js"></script>
+    <script src="../static//js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../static//js/scripts/pages/modal-add-role.js"></script>
+    <script src="../static//js/scripts/pages/app-access-roles.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+        <!--DataBase Scripts-->
+
+        <script>
+            $(document).ready(function() {
+                // Function to handle database switching
+                function switchDatabase(databaseName) {
+                    // Send a POST request to switch to the selected database
+                    $.ajax({
+                        url: "{{ url_for('db.switch_db', db='_db_name_') }}".replace('_db_name_', databaseName),
+                        method: 'POST',
+                        success: function(data) {
+                            // If the database is switched successfully, reload the page
+                            location.reload();
+                        },
+                        error: function(xhr, status, error) {
+                            // If there's an error switching the database, show an error message
+                            alert('Error switching database: ' + error);
+                        }
+                    });
+                }
+            
+                    // Function to display the delete confirmation modal
+                    function showDeleteConfirmation(databaseName) {
+                        // Decode the database name before displaying it
+                        var decodedDatabaseName = decodeURIComponent(databaseName);
+                        console.log('Database Name:', decodedDatabaseName); // Log the database name
+                        // Set the text of the delete confirmation modal to include the database name
+                        $('#deleteDatabaseName').text(decodedDatabaseName);
+                        // Show the delete confirmation modal
+                        $('#deleteConfirmation').show();
+                    }
+            
+                // Function to retrieve the list of databases and display them to the user
+                function getAndDisplayDatabases() {
+                    // Send a GET request to your Flask backend to retrieve the list of databases
+                    $.ajax({
+                        url: "{{ url_for('db.list_databases') }}",
+                        method: 'GET',
+                        success: function(data) {
+                            // If the list of databases is retrieved successfully, display it to the user
+                            var databaseList = $('#databaseList');
+                            databaseList.empty(); // Clear previous database entries
+            
+                            // Append each database name to the databaseList div
+                            data.databases.forEach(function(database) {
+                                // Create a div for each database with flex styling
+                                var databaseElement = $('<div class="database d-flex align-items-center" style="padding: 4px; width: 85%; margin-left: 20px;"></div>');
+                                // Create a span for the database name
+                                var nameElement = $('<span class="flex-grow-1">' + database + '</span>');
+                                // Create a button for delete action
+                                var deleteButton = $('<button class="delete-button ml-2" style="border-radius: 5px; border-color: transparent; background-color: #ff85851f; color: #d7000dff;">Supprimer</button>');
+            
+                                // Append the name and delete button to the database element
+                                databaseElement.append(nameElement);
+                                databaseElement.append(deleteButton);
+            
+                                // Append the database element to the databaseList div
+                                databaseList.append(databaseElement);
+            
+                                // Add click event for database name
+                                nameElement.click(function() {
+                                    switchDatabase(database); // Switch database when clicked
+                                });
+            
+                                // Add click event for delete button
+                                deleteButton.click(function() {
+                // Encode the database name before passing it to the function
+                var encodedDatabaseName = encodeURIComponent(database);
+                deleteDatabase(encodedDatabaseName); // Trigger deletion process
+            });
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            // If there's an error retrieving the list of databases, show an error message
+                            alert('Error retrieving databases: ' + error);
+                        }
+                    });
+                }
+            
+                // Call the function to retrieve and display databases when the document is ready
+                getAndDisplayDatabases();
+            
+            // Function to delete the database
+            function deleteDatabase(databaseName) {
+                // Send a DELETE request to your Flask backend to delete the selected database
+                $.ajax({
+                    url: "{{ url_for('db.delete_db', db_name='_db_name_') }}".replace('_db_name_', databaseName),
+                    method: 'DELETE',
+                    success: function(data) {
+                        // If the database is deleted successfully, notify the user
+                        alert(data.message); // Display the success message returned from the server
+                        // Refresh the list of databases
+                        getAndDisplayDatabases();
+                    },
+                    error: function(xhr, status, error) {
+                        // If there's an error deleting the database, show an error message
+                        alert('Error deleting database: ' + error);
+                    }
+                });
+            }
+            
+                // Click event for delete confirmation modal's "No" button
+                $('#deleteCancel').click(function() {
+                    // Close the delete confirmation modal without deleting the database
+                    $('#deleteConfirmation').hide();
+                });
+            });
+            
+            
+                </script>
+</body>
+<!-- END: Body-->
+
+</html>
