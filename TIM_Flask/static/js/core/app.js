@@ -6,6 +6,7 @@
   Author: Pixinvent
   Author URL: hhttp://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
+
 window.colors = {
   solid: {
     primary: '#7367F0',
@@ -1086,6 +1087,8 @@ if (typeof jQuery.validator === 'function') {
     }
   });
 }
+
+
 
 // Add validation class to input-group (input group validation fix, currently disabled but will be useful in future)
 /* function inputGroupValidation(el) {

@@ -57,6 +57,7 @@
                 </ul>
             </div>
             <ul class="nav navbar-nav align-items-center ms-auto">
+                <div id="google_translate_element"></div>
                 <li class="nav-item d-none d-lg-block">
                     <a class="nav-link nav-link-style">
                         <i class="ficon" data-feather="moon">
@@ -1188,6 +1189,42 @@
 
                             });
                         </script>
+                                                            <script type="text/javascript">
+                                                                function googleTranslateElementInit() {
+                                                                        new google.translate.TranslateElement(
+                                                                                { pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT },
+                                                                                'google_translate_element'
+                                                                        );
+                                                
+                                                                        // Apply the saved language if available
+                                                                        const savedLanguage = localStorage.getItem('selectedLanguage');
+                                                                        if (savedLanguage) {
+                                                                                setTimeout(() => {
+                                                                                        const languageDropdown = document.querySelector('.goog-te-combo');
+                                                                                        if (languageDropdown) {
+                                                                                                languageDropdown.value = savedLanguage;
+                                                                                                languageDropdown.dispatchEvent(new Event('change'));
+                                                                                        }
+                                                                                }, 500); // Delay to ensure the dropdown is ready
+                                                                        }
+                                                                }
+                                                
+                                                                // Monitor language selection and save it to localStorage
+                                                                document.addEventListener("DOMContentLoaded", () => {
+                                                                        setTimeout(() => {
+                                                                                const languageDropdown = document.querySelector('.goog-te-combo');
+                                                                                if (languageDropdown) {
+                                                                                        languageDropdown.addEventListener('change', () => {
+                                                                                                const selectedLanguage = languageDropdown.value;
+                                                                                                localStorage.setItem('selectedLanguage', selectedLanguage);
+                                                                                        });
+                                                                                }
+                                                                        }, 500); // Delay to ensure dropdown is ready for event listener
+                                                                });
+                                                        </script>
+                                                
+                                                        <script type="text/javascript"
+                                                                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 <!-- END: Body-->
