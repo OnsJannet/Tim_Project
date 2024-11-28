@@ -3,6 +3,7 @@ from pymongo.errors import CollectionInvalid, OperationFailure
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
+from itertools import chain
 load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
@@ -113,13 +114,21 @@ def list_databases():
         return jsonify({'error': str(e)}), 400  '''
 
 
+
+
 @db_bp.route('/list_databases', methods=['GET'])
 def list_databases():
     """List databases containing 'TIM_Demo', 'TIM_Demo_1', and 'TIM_Demo_2', but not 'TIM_Demo_new'."""
     try:
         all_databases = client.list_database_names()
         matching_databases = [db.split('TIM_Demo_')[-1] for db in all_databases if db.startswith('TIM_Demo') and db != 'TIM_Demo_new']
+        
+        # Add 'new' at the top if 'TIM_Demo_new' exists
+        if 'TIM_Demo_new' in all_databases:
+            matching_databases = list(chain(['new'], matching_databases))
+        
         return jsonify({'databases': matching_databases})
     except OperationFailure as e:
         return jsonify({'error': str(e)}), 400
+
 
