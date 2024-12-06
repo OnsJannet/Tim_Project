@@ -3,9 +3,11 @@
 from datetime import datetime
 from pymongo import MongoClient
 from uuid import uuid4
-
+import os
 from Bleuprints.db_routes import db, client, get_current_db
-client = MongoClient("localhost", 27017)
+
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
 db = get_current_db()
 #db = client["TIM_Demo"]
 """

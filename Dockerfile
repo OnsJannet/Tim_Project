@@ -29,9 +29,9 @@ RUN pip install --upgrade pip && \
 
 
 # Copy application code
-COPY . .
+COPY TIM_Flask/. .
 # Expose port
 EXPOSE 5000
-WORKDIR /app/TIM_Flask
+WORKDIR /app
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
 #CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:create_app()"]
